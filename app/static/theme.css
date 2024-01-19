@@ -1,3 +1,81 @@
-# MusiqApp/app/static/theme.css
+/* theme.css */
 
-/* CSS for styling - Add your styling code here */
+body {
+    font-family: arial, sans-serif; /* Specify your preferred font */
+    color: gold; /* Set the font color to gold */
+}
+
+.custom-div {
+    /* Custom div */
+    padding: 10px;
+    border: 5px solid gold;
+    margin: 0%; 
+    font-size: 18px; 
+    align: center;
+}
+
+/* Rename */
+.custom-div2 {
+    /* Custom div2 */
+    /* width: 50%; */
+    padding: 10px;
+    border: 5px solid gold;
+    margin: 0%; 
+    font-size: 18px; 
+    align: center;
+}
+
+.new-div {
+    color: gold;
+}
+
+.hr {
+    color: gold;
+    width: 100%;
+}
+/* Set gold font color */
+p {
+    color: white;
+}
+
+/* Set white color for other elements */
+/* Add specific selectors as needed */
+h1, h2, h3 , h4{
+    color: gold;
+}
+
+
+/* Set white color for links */
+a {
+    color: white;
+}
+
+ul  {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+
+li {
+    float: right;
+    padding: 0.15px 6px;
+}
+
+
+/* Style visited links */
+a:visited {
+    color: white;
+}
+
+/* Style hover effect for links */
+li a:hover {
+    color: gold;
+}
+
+/* Style active links */
+li a:active {
+    color: gold;
+}
+
+
