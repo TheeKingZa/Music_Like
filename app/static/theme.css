@@ -1,6 +1,8 @@
 /* theme.css */
 
 body {
+    text-align: center;
+    background-color: black;
     font-family: arial, sans-serif; /* Specify your preferred font */
     color: gold; /* Set the font color to gold */
 }
@@ -29,8 +31,9 @@ body {
     color: gold;
 }
 
-.hr {
-    color: gold;
+hr {
+    border-color: gold;
+    margin: 5px 0;
     width: 100%;
 }
 /* Set gold font color */
@@ -42,9 +45,14 @@ p {
 /* Add specific selectors as needed */
 h1, h2, h3 , h4{
     color: gold;
+    padding: 10px
+    font-family: 'myFont', arial;
 }
-
-
+/* set a custom font here*/
+@font-face {
+    font-family: "myFont";
+    src: url('fonts/ALFABET.ttf') format('truetype');
+}
 /* Set white color for links */
 a {
     color: white;
@@ -78,4 +86,12 @@ li a:active {
     color: gold;
 }
 
-
+.footer {
+    position: fixed;
+    left: -15;
+    bottom: 0;
+    width: 100%;
+    color: gold;
+    padding: 10px;
+    text-align: right;
+}

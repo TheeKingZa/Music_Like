@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+            {% block title %}
+                Music Like
+            {% endblock %}
+        </title>
+
+		 <!-- Link to your theme.css file -->
+		 <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
+        </head>
+
+
+<body>
+        <header>
+            <div class="logo"></div>
+        
+            <div class="new-div" >
+            <h1><b><t>Music Like</t></b></h1>
+            </div>
+    </header>
+<hr/>
+<!-- NAV BAR here for configurations -->
+<nav>
+    <ul>
+        <li><a href="{{ url_for('aboutus') }}">AboutUs</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+    </ul>
+</nav>
+<!-- NAV BAR ENDS -->
+<hr color="gold" width="100%" />
+
+<!-- Main Content -->
+    {% block content %}
+
+    {% endblock %}
+
+<!-- Footer -->
+    <div align="right">
+        <footer class="footer">
+            <hr/>
+            </p>Estabished: 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

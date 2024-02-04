@@ -1,26 +1,22 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
+# This file contains unit tests for the song list functionality
+
+# Import necessary modules
 import unittest
-from app.model import load_songs_data
-import os
 
+# Import the Song class from model.py
+from app.model import Song
+
+# Define a test case class
 class TestSongList(unittest.TestCase):
+    # Test the initialization of Song objects
+    def test_song_initialization(self):
+        song = Song(1, "Title", "Artist")
+        self.assertEqual(song.id, 1)
+        self.assertEqual(song.title, "Title")
+        self.assertEqual(song.artist, "Artist")
 
-    def test_load_songs_data(self):
-        '''
-        Test if songs data is loaded successfully
-        '''
-        # Print the current working directory
-        print("Current working directory:", os.getcwd())
-
-        # Update the file path to an absolute path
-        abs_file_path = os.path.abspath('Music_like/data/songs.json')
-
-        # Test if songs data is loaded successfully
-        songs_data = load_songs_data(abs_file_path)
-        self.assertTrue(songs_data, "Failed to load songs data")
-
-'''
-If this script is run directly (not imported), run the tests
-'''
+# Run the tests if this file is executed directly
 if __name__ == '__main__':
     unittest.main()
