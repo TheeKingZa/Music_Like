@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Sign Up
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="custom-div" align="center">
+        <h2>Sign Up</h2>
+        <form id="signupForm" action="/signup" method="POST">
+            <!-- Username field -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <!-- Name field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- Surname field -->
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <!-- Email field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Password field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <!-- Password input type -->
+                <input type="password" id="password" name="password" required>
+                <!-- Icon to toggle password visibility -->
+                <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+            <!-- Confirm Password field -->
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <!-- Submit button -->
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</main>
+
+<script>
+    // Function to toggle password visibility
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the toggle password icon
+        const togglePassword = document.querySelector('.toggle-password');
+        // Add click event listener to the toggle password icon
+        togglePassword.addEventListener('click', function() {
+            // Find the password field associated with the icon
+            const passwordField = document.querySelector(this.getAttribute('toggle'));
+            // Toggle the eye icon class to show/hide eye slash icon
+            this.classList.toggle('fa-eye-slash');
+            // Toggle the password field type between text and password
+            if (passwordField.getAttribute('type') === 'password') {
+                passwordField.setAttribute('type', 'text');
+            } else {
+                passwordField.setAttribute('type', 'password');
+            }
+        });
+    });
+</script>
+{% endblock %}

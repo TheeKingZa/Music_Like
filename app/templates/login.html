@@ -6,6 +6,7 @@ Login
 
 {% block content %}
 <main>
+    
     <div class="custom-div" align="center">
         <h2>Login</h2>
         <form id="loginForm" action="/login" method="POST">
@@ -18,6 +19,7 @@ Login
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Login</button>
+            <button type="submit">Sign-Up</button>
         </form>
         <!-- Display error message if login fails -->
         {% if error %}
@@ -30,7 +32,7 @@ Login
     // JavaScript function to change border color if login fails
     {% if error %}
         document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector('.custom-div').style.border = '1px solid red';
+            document.querySelector('.custom-div').style.border = '15px solid red';
         });
     {% endif %}
 </script>
