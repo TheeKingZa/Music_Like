@@ -19,7 +19,8 @@ def login():
     entered_password = request.form['password']
     
     if entered_username == username and entered_password == password:
-        return redirect(url_for('home'))  # Redirect to home page if successful
+        return redirect(url_for('home'))
+        # Redirect to home page if successful
     else:
         error = "Invalid Username or Password. Please Try Again"
         return render_template('login.html', current_page='login', error=error)
@@ -52,16 +53,24 @@ def signup():
     # For demonstration purposes, let's just redirect to the sign-up page again
     return redirect(url_for('signUp'))
 
+@app.route('/signUp')
+def signUp():
+    # Render SignUp
+    return render_template('sign-up.html', current_page='signUp')
+
 @app.route('/home')
 def home():
-    return render_template('home.html')  # Render the home page
+    # Render the home page
+    return render_template('home.html')
 
 @app.route('/contact')
 def contact():
+    # Render Contact page
     return render_template('contact.html')
 
 @app.route('/aboutus')
 def aboutus():
+    # Render AboutUs page
     return render_template('aboutus.html')
     
 if __name__ == '__main__':

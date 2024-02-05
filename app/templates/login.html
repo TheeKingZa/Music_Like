@@ -8,18 +8,24 @@ Login
 <main>
     
     <div class="custom-div" align="center">
-        <h2>Login</h2>
+        <h2><u>Login</u></h2>
+        <hr/>
         <form id="loginForm" action="/login" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
             </div>
+        <br/>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Login</button>
-            <button type="submit">Sign-Up</button>
+        <hr/>
+        <br/>
+            <!-- Login button-->
+            <button type="submit">Login</button> 
+            <!-- Sign Up button -->
+            <a href="{{ url_for('signUp') }}" class="btn btn-primary">Sign Up</a>
         </form>
         <!-- Display error message if login fails -->
         {% if error %}
@@ -32,7 +38,7 @@ Login
     // JavaScript function to change border color if login fails
     {% if error %}
         document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector('.custom-div').style.border = '15px solid red';
+           document.querySelector('.custom-div').style.border = '15px solid red';
         });
     {% endif %}
 </script>
