@@ -72,6 +72,8 @@ def contact():
 def aboutus():
     # Render AboutUs page
     return render_template('aboutus.html')
+
+
     
 if __name__ == '__main__':
     app.run(debug=True)

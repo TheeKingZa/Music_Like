@@ -2,9 +2,10 @@
 
 body {
     text-align: center;
-    background-color: black;
     font-family: arial, sans-serif; /* Specify your preferred font */
     color: gold; /* Set the font color to gold */
+    
+    background-color: black;
 }
 
 .custom-div {
@@ -88,10 +89,10 @@ li a:active {
 
 .footer {
     position: fixed;
-    left: -15;
+    left: -30;
     bottom: 0;
     width: 100%;
     color: gold;
-    padding: 10px;
+    padding: 5px;
     text-align: right;
 }
