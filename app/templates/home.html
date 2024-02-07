@@ -6,20 +6,93 @@ Home
 
 {% block content%}
 <main>
-    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-success" role="alert">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
     <div class="custom-div">
     <!-- Contents Here-->
     <h2>Hello,World!</h2>
 <hr/>
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <div class="alert alert-success" role="alert">
-                    {% for message in messages %}
-                        {{ message }}
-                    {% endfor %}
-                </div>
-            {% endif %}
-        {% endwith %}
+     
+
+        
+<body>
+    <form id="searchForm">
+        <input type="text" id="searchInput" name="searchQuery" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+    <table id="trackTable" style="width:100%">
+            <tr>
+                <th>Name</th>
+                <td>Information</td>
+            </tr>
+
+            {% for track in tracks %}
+            <tr>
+                <td>{{ track.artist }}</td>
+            </tr>
+            <tr>
+                <td>{{ track.title }}</td>
+            </tr>
+            <tr>
+                <td>{{ track.album }}</td>
+            </tr>
+            <tr>
+                <td>{{ track.year_released }}</td>
+            </tr>
+        </tr>
+            {% endfor %}
+    
+    </table>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            let searchQuery = document.getElementById('searchInput').value;
+            fetch(`/search?query=${searchQuery}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Clear table body
+                    document.querySelector('#trackTable tbody').innerHTML = '';
+                    // Populate table with search results
+                    data.forEach(track => {
+                        let row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>Artist: ${track.artist}</td>
+                            <td>Title: ${track.title}</td>
+                            <td>Album: ${track.album}</td>
+                            <td>Year: ${track.year_released}</td>
+                        `;
+                        document.querySelector('#trackTable tbody').appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 </main>
 {% endblock %}

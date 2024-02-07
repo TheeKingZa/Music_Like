@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages
+from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify
 import json
 # Flask app instance
 app = Flask(__name__)
@@ -9,6 +9,13 @@ app.secret_key = 'admin'
 # Get information of user
 username = 'admin'
 password = 'admin'
+
+# Sample data (replace with data from your database)
+tracks = [
+    {"track_id": 1, "artist": "TheeKingZa", "title": "Tell Me", "album": "Vices", "year_released": 2023},
+    {"track_id": 2, "artist": "Earle Fari", "title": "Lose Myself", "album": "Drip", "year_released": 2010},
+    # Add more tracks as needed
+]
 
 def read_user_data():
     try:
@@ -26,7 +33,7 @@ def add_user_data(user_data):
 # Routes
 @app.route('/')
 def index():
-    return render_template('login.html', current_page='/')
+    return render_template('login.html', current_page='/', tracks=tracks)
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -87,6 +94,13 @@ def home():
     # Render the home page
     messages = get_flashed_messages('success')
     return render_template('home.html', messages=messages)
+
+@app.route('/search')
+def search():
+    search_query = request.args.get('query')
+    # Simulate Database search
+    search_results = [track for track in tracks if search_query.lower() in track['title'].lower()] or [track for track in tracks if search_query.lower() in track['album'].lower()]
+    return jsonify(search_results)
 
 @app.route('/contact')
 def contact():
