@@ -1,13 +1,28 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template, request, url_for, redirect
-
+from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages
+import json
 # Flask app instance
 app = Flask(__name__)
+app.secret_key = 'admin'
 
+# Get information of user
 username = 'admin'
 password = 'admin'
 
+def read_user_data():
+    try:
+        with open('user_db.json', 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+
+def add_user_data(user_data):
+    users = read_user_data()
+    users.append(user_data)
+    with open('user_db.json', 'w') as file:
+        json.dump(users, file, indent=4)
+    
 # Routes
 @app.route('/')
 def index():
@@ -46,12 +61,21 @@ def signup():
     
     # Check if the user already exists (e.g., by querying the database)
     # Add your code to check if the user exists
+    user_data = {
+        'username': username,
+        'name': name,
+        'surname': surname,
+        'email': email,
+        'password': password
+    }
     
     # If everything is valid, you can store the user in the database
     # Add your code to store the user in the database
     
     # For demonstration purposes, let's just redirect to the sign-up page again
-    return redirect(url_for('signUp'))
+    add_user_data(user_data)
+    flash('Signup successful!', 'success')
+    return redirect(url_for('home'))
 
 @app.route('/signUp')
 def signUp():
@@ -61,7 +85,8 @@ def signUp():
 @app.route('/home')
 def home():
     # Render the home page
-    return render_template('home.html')
+    messages = get_flashed_messages('success')
+    return render_template('home.html', messages=messages)
 
 @app.route('/contact')
 def contact():
