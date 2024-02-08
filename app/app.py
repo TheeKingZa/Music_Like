@@ -7,15 +7,15 @@ app = Flask(__name__)
 app.secret_key = 'admin'
 
 # Get information of user
-username = 'admin'
-password = 'admin'
-
+# username = user_data['username']
+# password = user_data['password']
 
 
 # Load track data from songs.json
 with open('data/songs.json', 'r') as file:
     tracks = json.load(file)
 
+# Load user_data
 def read_user_data():
     try:
         with open('user_db.json', 'r') as file:
@@ -36,12 +36,18 @@ def index():
 
 @app.route('/login', methods=['POST'])
 def login():
+    
     entered_username = request.form['username']
     entered_password = request.form['password']
     
-    if entered_username == username and entered_password == password:
-        return redirect(url_for('home'))
-        # Redirect to home page if successful
+    # Load user data
+    user_data = read_user_data()
+    
+    # check if the entered user and paswd is matching
+    for user in user_data:
+        if user['username'] == entered_username and user['password'] == entered_password:
+            return redirect(url_for('home'))
+            # Redirect to home page if successful
     else:
         error = "Invalid Username or Password. Please Try Again"
         return render_template('login.html', current_page='login', error=error)

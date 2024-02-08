@@ -12,5 +12,19 @@
         "surname": "Mathikha",
         "email": "proceedingmc@gmail.com",
         "password": "1234"
+    },
+    {
+        "username": "Thabo",
+        "name": "Thabong",
+        "surname": "Mofokeng",
+        "email": "mofokeng@gmail.com",
+        "password": "12345"
+    },
+    {
+        "username": "New",
+        "name": "Free",
+        "surname": "Me",
+        "email": "Me@gmail.com",
+        "password": "123456Me"
     }
 ]

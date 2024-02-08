@@ -66,6 +66,13 @@ Sign Up
 </main>
 
 <script>
+    // JavaScript function to change border color if login fails
+    {% if error %}
+        document.addEventListener("DOMContentLoaded", function() {
+           document.querySelector('.custom-div').style.border = '15px solid red';
+        });
+    {% endif %}
+    
     // Function to toggle password visibility
     document.addEventListener("DOMContentLoaded", function() {
         // Find the toggle password icon
