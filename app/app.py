@@ -2,33 +2,16 @@
 
 from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify
 import json
+from db import read_user_data, add_user_data
 # Flask app instance
 app = Flask(__name__)
-app.secret_key = 'admin'
-
-# Get information of user
-# username = user_data['username']
-# password = user_data['password']
-
+# app.secret_key = 'admin'
 
 # Load track data from songs.json
 with open('data/songs.json', 'r') as file:
     tracks = json.load(file)
 
-# Load user_data
-def read_user_data():
-    try:
-        with open('.user_db.json', 'r') as file:
-            return json.load(file)
-    except FileNotFoundError:
-        return []
 
-def add_user_data(user_data):
-    users = read_user_data()
-    users.append(user_data)
-    with open('.user_db.json', 'w') as file:
-        json.dump(users, file, indent=4)
-    
 # Routes
 @app.route('/')
 def index():

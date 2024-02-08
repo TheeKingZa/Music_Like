@@ -1,97 +1,93 @@
-{% extends 'layout.html'%}
+{% extends 'layout.html' %}
 
 {% block title %}
 Home
 {% endblock %}
 
-{% block content%}
+{% block content %}
 <main>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-        <div class="alert alert-success" role="alert">
-            {% for message in messages %}
-                {{ message }}
-            {% endfor %}
-        </div>
-    {% endif %}
-{% endwith %}
-
-    <div class="custom-div">
-    <!-- Contents Here-->
-    <h2>Hello,World!</h2>
-<hr/>
-     
-
-        
-<body>
-    <form id="searchForm">
-        <input type="text" id="searchInput" name="searchQuery" placeholder="Search...">
-        <button type="submit">Search</button>
-    </form>
-
-    <table id="trackTable" style="width:100%">
-        
-        <tr>
-            <th><h3>Search for Recommendations.</h3></th>
-        </tr>
-            {% for track in tracks %}
-            <tr>
-                <td>{{ track.artist }}</td>
-            </tr>
-            <tr>
-                <td>{{ track.title }}</td>
-            </tr>
-            <tr>
-                <td>{{ track.album }}</td>
-            </tr>
-            <tr>
-                <td>{{ track.year_released }}</td>
-            </tr>
-        </tr>
-            {% endfor %}
+    <style>
+        /* Define a custom class for the search button */
+        .search-button {
+            background-color: white; /* Change to your desired color */
+            color: black; /* Text color */
+            border-color: gold; /* Border color (optional) */
+        }
     
-    </table>
+        /* Hover effect for the search button */
+        .search-button:hover {
+            background-color: gold; /* Change to your desired hover color */
+            border-color: white; /* Border color on hover (optional) */
+        }
+        .custom-input {
+            color: gold;
+            background-color: black;
+            border-color: gold;
+        }
+    </style>
 
-    <script>
-        document.getElementById('searchForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            let searchQuery = document.getElementById('searchInput').value;
-            fetch(`/search?query=${searchQuery}`)
-                .then(response => response.json())
-                .then(data => {
-                    // Clear table body
-                    document.querySelector('#trackTable tbody').innerHTML = '';
-                    // Populate table with search results
-                    data.forEach(track => {
-                        let row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>Artist: ${track.artist}</td>
-                            <td>Title: ${track.title}</td>
-                            <td>Album: ${track.album}</td>
-                            <td>Year: ${track.year_released}</td>
-                        `;
-                        document.querySelector('#trackTable tbody').appendChild(row);
-                    });
-                })
-                .catch(error => console.error('Error:', error));
-        });
-    </script>
+    
+    <section class="welcome-section">
+        <div class="custom-div">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Welcome to Your Music Library</h3>
+    <hr/>
+                    <p>Explore a vast collection of music tracks from your favorite artists, albums, and genres.</p>
+    <hr/>
 
+        </div>
+                <div class="col-md-4">
+                    <form id="searchForm">
+                        <div class="input-group">
+                            <input type="text" class="form-control custom-input" id="searchInput" name="searchQuery" placeholder="Search...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary search-button" type="submit" ><b>Search</b></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+    <section class="search-results">
+        <div class="container">
+            <div class="row" id="trackResults">
+                <!-- Track search results will appear here dynamically -->
+            </div>
+        </div>
+    </section>
 </main>
+
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        let searchQuery = document.getElementById('searchInput').value;
+        fetch(`/search?query=${searchQuery}`)
+            .then(response => response.json())
+            .then(data => {
+                let trackResults = document.getElementById('trackResults');
+                trackResults.innerHTML = ''; // Clear previous results
+                // Populate track search results
+                data.forEach(track => {
+                    let trackCard = `
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">${track.title}</h5>
+                                    <p class="card-text">Artist: ${track.artist}</p>
+                                    <p class="card-text">Album: ${track.album}</p>
+                                    <p class="card-text">Year: ${track.year_released}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    trackResults.insertAdjacentHTML('beforeend', trackCard);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>
+
 {% endblock %}

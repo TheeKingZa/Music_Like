@@ -3,37 +3,18 @@
 This file handles database operations
 # Import necessary modules
 '''
-'''
-import sqlite3
 
+import json
 
-# Function to fetch song recommendations from the database
-def get_recommendations():
-    # Connect to the database
-    conn = sqlite3.connect('database.db')
-    cursor = conn.cursor()
+def read_user_data():
+    try:
+        with open('.user_db.json', 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
 
-    # Execute SQL query to fetch recommendations
-    cursor.execute("SELECT * FROM recommendations")
-
-    # Fetch data
-    recommendations = cursor.fetchall()
-
-    # Close connection
-    conn.close()
-
-    return recommendations
-
-# Function to add user preferences to the database
-def add_preference(user_id, song_id):
-    # Connect to the database
-    conn = sqlite3.connect('database.db')
-    cursor = conn.cursor()
-
-    # Execute SQL query to insert user preference
-    cursor.execute("INSERT INTO preferences (user_id, song_id) VALUES (?, ?)", (user_id, song_id))
-
-    # Commit changes and close connection
-    conn.commit()
-    conn.close()
-'''
+def add_user_data(user_data):
+    users = read_user_data()
+    users.append(user_data)
+    with open('.user_db.json', 'w') as file:
+        json.dump(users, file, indent=4)
