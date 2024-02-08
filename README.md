@@ -18,11 +18,12 @@
   │   │   └── theme.css      # CSS for styling
   │   ├── templates/
   │   │   ├── layout.html    # HTML templates
+  │   │   ├── login.html
+  │   │   ├── sign-up.html
   │   │   ├── home.html      
   │   │   ├── contact.html
   │   │   ├── aboutus.html
-  │   │   ├── login.html
-  │   │   ├── sign-up.html
+  │   │   ├── navBar.html
   │   ├── __init__.py
   │   ├── app.py               # Flask application logic
   │   ├── model.py             # Machine learning model logic
