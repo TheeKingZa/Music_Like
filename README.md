@@ -17,9 +17,12 @@
   │   ├── static/
   │   │   └── theme.css      # CSS for styling
   │   ├── templates/
-  │   │   ├── layout.html      # HTML layout template
-  │   │   ├── home.html        # Home page template
-  │   │   ├── recommendations.html  # Recommendations page template
+  │   │   ├── layout.html    # HTML templates
+  │   │   ├── home.html      
+  │   │   ├── contact.html
+  │   │   ├── aboutus.html
+  │   │   ├── login.html
+  │   │   ├── sign-up.html
   │   ├── __init__.py
   │   ├── app.py               # Flask application logic
   │   ├── model.py             # Machine learning model logic
