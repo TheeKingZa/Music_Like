@@ -256,5 +256,185 @@
         "title": "Old Town Road (feat. Billy Ray Cyrus)",
         "album": "7",
         "year_released": 2019
+    },
+    {
+        "artist": "Ariana Grande",
+        "title": "Thank U, Next",
+        "album": "Thank U, Next",
+        "year_released": 2019
+    },
+    {
+        "artist": "The Weeknd",
+        "title": "Blinding Lights",
+        "album": "After Hours",
+        "year_released": 2020
+    },
+    {
+        "artist": "Beyoncé",
+        "title": "Single Ladies (Put a Ring on It)",
+        "album": "I Am... Sasha Fierce",
+        "year_released": 2008
+    },
+    {
+        "artist": "Rihanna",
+        "title": "Umbrella",
+        "album": "Good Girl Gone Bad",
+        "year_released": 2007
+    },
+    {
+        "artist": "Bruno Mars",
+        "title": "24K Magic",
+        "album": "24K Magic",
+        "year_released": 2016
+    },
+    {
+        "artist": "Adele",
+        "title": "Rolling in the Deep",
+        "album": "21",
+        "year_released": 2010
+    },
+    {
+        "artist": "Frank Ocean",
+        "title": "Thinkin Bout You",
+        "album": "Channel Orange",
+        "year_released": 2012
+    },
+    {
+        "artist": "Lizzo",
+        "title": "Truth Hurts",
+        "album": "Cuz I Love You",
+        "year_released": 2017
+    },
+    {
+        "artist": "Solange",
+        "title": "Cranes in the Sky",
+        "album": "A Seat at the Table",
+        "year_released": 2016
+    },
+    {
+        "artist": "John Legend",
+        "title": "All of Me",
+        "album": "Love in the Future",
+        "year_released": 2013
+    },
+    {
+        "artist": "Dua Lipa",
+        "title": "Don't Start Now",
+        "album": "Future Nostalgia",
+        "year_released": 2019
+    },
+    {
+        "artist": "Justin Timberlake",
+        "title": "Can't Stop the Feeling!",
+        "album": "Trolls: Original Motion Picture Soundtrack",
+        "year_released": 2016
+    },
+    {
+        "artist": "SZA",
+        "title": "Love Galore",
+        "album": "Ctrl",
+        "year_released": 2017
+    },
+    {
+        "artist": "Alicia Keys",
+        "title": "If I Ain't Got You",
+        "album": "The Diary of Alicia Keys",
+        "year_released": 2003
+    },
+    {
+        "artist": "Sam Smith",
+        "title": "Stay with Me",
+        "album": "In the Lonely Hour",
+        "year_released": 2014
+    },
+    {
+        "artist": "Mariah Carey",
+        "title": "We Belong Together",
+        "album": "The Emancipation of Mimi",
+        "year_released": 2005
+    },
+    {
+        "artist": "Beyoncé",
+        "title": "Crazy in Love",
+        "album": "Dangerously in Love",
+        "year_released": 2003
+    },
+    {
+        "artist": "Usher",
+        "title": "Yeah!",
+        "album": "Confessions",
+        "year_released": 2004
+    },
+    {
+        "artist": "Whitney Houston",
+        "title": "I Will Always Love You",
+        "album": "The Bodyguard: Original Soundtrack Album",
+        "year_released": 1992
+    },
+    {
+        "artist": "Stevie Wonder",
+        "title": "Superstition",
+        "album": "Talking Book",
+        "year_released": 1972
+    },
+    {
+        "artist": "Metallica",
+        "title": "Enter Sandman",
+        "album": "Metallica",
+        "year_released": 1991
+    },
+    {
+        "artist": "Linkin Park",
+        "title": "In the End",
+        "album": "Hybrid Theory",
+        "year_released": 2000
+    },
+    {
+        "artist": "System of a Down",
+        "title": "Chop Suey!",
+        "album": "Toxicity",
+        "year_released": 2001
+    },
+    {
+        "artist": "Nirvana",
+        "title": "Smells Like Teen Spirit",
+        "album": "Nevermind",
+        "year_released": 1991
+    },
+    {
+        "artist": "Foo Fighters",
+        "title": "Everlong",
+        "album": "The Colour and the Shape",
+        "year_released": 1997
+    },
+    {
+        "artist": "Green Day",
+        "title": "Basket Case",
+        "album": "Dookie",
+        "year_released": 1994
+    },
+    {
+        "artist": "Red Hot Chili Peppers",
+        "title": "Under the Bridge",
+        "album": "Blood Sugar Sex Magik",
+        "year_released": 1991
+    },
+    {
+        "artist": "Arctic Monkeys",
+        "title": "Do I Wanna Know?",
+        "album": "AM",
+        "year_released": 2013
+    },
+    {
+        "artist": "The Killers",
+        "title": "Mr. Brightside",
+        "album": "Hot Fuss",
+        "year_released": 2003
+    },
+    {
+        "artist": "Radiohead",
+        "title": "Creep",
+        "album": "Pablo Honey",
+        "year_released": 1993
     }
  ]
