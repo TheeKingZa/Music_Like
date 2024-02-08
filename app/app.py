@@ -6,7 +6,7 @@ from db import read_user_data, add_user_data
 
 # Flask app instance
 app = Flask(__name__)
-
+app.secret_key  = 'admin'
 
 # Load track data from songs.json
 with open('data/songs.json', 'r') as file:
