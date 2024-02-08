@@ -1,0 +1,18 @@
+.table-container {
+    display: flex;
+}
+
+#trackTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#trackTable th, #trackTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#trackTable th {
+    width: 150px; /* Width of the left column (table headers) */
+}

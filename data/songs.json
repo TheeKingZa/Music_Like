@@ -1,17 +1,260 @@
 [
     {
-        "title": "Song 1",
-        "artist": "Artist 1",
-        "genre": "Genre 1",
-        "duration": 180,
-        "release_year": 2020
+        "artist": "TheeKingZa",
+        "title": "Tell Me",
+        "album": "Vices",
+        "year_released": 2023
     },
     {
-        "title": "Song 2",
-        "artist": "Artist 2",
-        "genre": "Genre 2",
-        "duration": 200,
-        "release_year": 2019
+        "artist": "Earle Fari",
+        "title": "Lose Myself",
+        "album": "Drip",
+        "year_released": 2010
     },
-    // Add more songs as needed
-]
+    {
+        "artist": "Kanye West",
+        "title": "We Major(feat Really Doe)",
+        "album": "Late Registration",
+        "year_released": 2005
+    },
+    {
+        "artist": "Childish Gambino",
+        "title": "Redbone",
+        "album": "Awaken, My Love!",
+        "year_released": 2016
+    },
+    {
+        "artist": "Travis Scott",
+        "title": "SICKO MODE",
+        "album": "Astroworld",
+        "year_released": 2018
+    },
+    {
+        "artist": "J. Cole",
+        "title": "No Role Modelz",
+        "album": "2014 Forest Hills Drive",
+        "year_released": 2014
+    },
+    {
+        "artist": "Chance the Rapper",
+        "title": "No Problem",
+        "album": "Coloring Book",
+        "year_released": 2016
+    },
+    {
+        "artist": "Cardi B",
+        "title": "Bodak Yellow",
+        "album": "Invasion of Privacy",
+        "year_released": 2017
+    },
+    {
+        "artist": "Logic",
+        "title": "1-800-273-8255",
+        "album": "Everybody",
+        "year_released": 2017
+    },
+    {
+        "artist": "Lil Wayne",
+        "title": "A Milli",
+        "album": "Tha Carter III",
+        "year_released": 2008
+    },
+    {
+        "artist": "ASAP Rocky",
+        "title": "Praise the Lord (Da Shine)",
+        "album": "Testing",
+        "year_released": 2018
+    },
+    {
+        "artist": "Migos",
+        "title": "Bad and Boujee",
+        "album": "Culture",
+        "year_released": 2016
+    },
+    {
+        "artist": "Future",
+        "title": "Mask Off",
+        "album": "Future",
+        "year_released": 2017
+    },
+    {
+        "artist": "Kendrick Lamar",
+        "title": "HUMBLE.",
+        "album": "DAMN.",
+        "year_released": 2017
+    },
+    {
+        "artist": "Drake",
+        "title": "Hotline Bling",
+        "album": "Views",
+        "year_released": 2015
+    },
+    {
+        "artist": "Kanye West",
+        "title": "Stronger",
+        "album": "Graduation",
+        "year_released": 2007
+    },
+    {
+        "artist": "Jay-Z",
+        "title": "Empire State of Mind",
+        "album": "The Blueprint 3",
+        "year_released": 2009
+    },
+    {
+        "artist": "Eminem",
+        "title": "Lose Yourself",
+        "album": "8 Mile Soundtrack",
+        "year_released": 2002
+    },
+    {
+        "artist": "Nas",
+        "title": "N.Y. State of Mind",
+        "album": "Illmatic",
+        "year_released": 1994
+    },
+    {
+        "artist": "OutKast",
+        "title": "Ms. Jackson",
+        "album": "Stankonia",
+        "year_released": 2000
+    },
+    {
+        "artist": "Tupac Shakur",
+        "title": "California Love",
+        "album": "All Eyez on Me",
+        "year_released": 1995
+    },
+    {
+        "artist": "The Notorious B.I.G.",
+        "title": "Juicy",
+        "album": "Ready to Die",
+        "year_released": 1994
+    },
+    {
+        "artist": "Lauryn Hill",
+        "title": "Doo Wop (That Thing)",
+        "album": "The Miseducation of Lauryn Hill",
+        "year_released": 1998
+    },
+    {
+        "artist": "Tyler, The Creator",
+        "title": "EARFQUAKE",
+        "album": "IGOR",
+        "year_released": 2019
+    },
+    {
+        "artist": "Lil Uzi Vert",
+        "title": "XO TOUR Llif3",
+        "album": "Luv Is Rage 2",
+        "year_released": 2017
+    },
+    {
+        "artist": "21 Savage",
+        "title": "Bank Account",
+        "album": "Issa Album",
+        "year_released": 2017
+    },
+    {
+        "artist": "JID",
+        "title": "151 Rum",
+        "album": "DiCaprio 2",
+        "year_released": 2018
+    },
+    {
+        "artist": "Sheck Wes",
+        "title": "Mo Bamba",
+        "album": "MUDBOY",
+        "year_released": 2018
+    },
+    {
+        "artist": "Meek Mill",
+        "title": "Dreams and Nightmares",
+        "album": "Dreams and Nightmares",
+        "year_released": 2012
+    },
+    {
+        "artist": "Anderson .Paak",
+        "title": "Come Down",
+        "album": "Malibu",
+        "year_released": 2016
+    },
+    {
+        "artist": "Juice WRLD",
+        "title": "Lucid Dreams",
+        "album": "Goodbye & Good Riddance",
+        "year_released": 2018
+    },
+    {
+        "artist": "A Boogie wit da Hoodie",
+        "title": "Drowning",
+        "album": "The Bigger Artist",
+        "year_released": 2017
+    },
+    {
+        "artist": "Playboi Carti",
+        "title": "Magnolia",
+        "album": "Playboi Carti",
+        "year_released": 2017
+    },
+    {
+        "artist": "Kendrick Lamar",
+        "title": "Alright",
+        "album": "To Pimp a Butterfly",
+        "year_released": 2015
+    },
+    {
+        "artist": "Drake",
+        "title": "God's Plan",
+        "album": "Scorpion",
+        "year_released": 2018
+    },
+    {
+        "artist": "J. Cole",
+        "title": "Middle Child",
+        "album": "The Off-Season",
+        "year_released": 2019
+    },
+    {
+        "artist": "Travis Scott",
+        "title": "SICKO MODE",
+        "album": "Astroworld",
+        "year_released": 2018
+    },
+    {
+        "artist": "Childish Gambino",
+        "title": "This Is America",
+        "album": "Single",
+        "year_released": 2018
+    },
+    {
+        "artist": "Post Malone",
+        "title": "rockstar",
+        "album": "beerbongs & bentleys",
+        "year_released": 2017
+    },
+    {
+        "artist": "Eminem",
+        "title": "Rap God",
+        "album": "The Marshall Mathers LP 2",
+        "year_released": 2013
+    },
+    {
+        "artist": "Kanye West",
+        "title": "Runaway",
+        "album": "My Beautiful Dark Twisted Fantasy",
+        "year_released": 2010
+    },
+    {
+        "artist": "Cardi B",
+        "title": "WAP (feat. Megan Thee Stallion)",
+        "album": "Single",
+        "year_released": 2020
+    },
+    {
+        "artist": "Lil Nas X",
+        "title": "Old Town Road (feat. Billy Ray Cyrus)",
+        "album": "7",
+        "year_released": 2019
+    }
+ ]

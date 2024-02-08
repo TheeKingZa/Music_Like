@@ -10,12 +10,11 @@ app.secret_key = 'admin'
 username = 'admin'
 password = 'admin'
 
-# Sample data (replace with data from your database)
-tracks = [
-    {"track_id": 1, "artist": "TheeKingZa", "title": "Tell Me", "album": "Vices", "year_released": 2023},
-    {"track_id": 2, "artist": "Earle Fari", "title": "Lose Myself", "album": "Drip", "year_released": 2010},
-    # Add more tracks as needed
-]
+
+
+# Load track data from songs.json
+with open('data/songs.json', 'r') as file:
+    tracks = json.load(file)
 
 def read_user_data():
     try:
@@ -99,7 +98,10 @@ def home():
 def search():
     search_query = request.args.get('query')
     # Simulate Database search
-    search_results = [track for track in tracks if search_query.lower() in track['title'].lower()] or [track for track in tracks if search_query.lower() in track['album'].lower()]
+    search_results = [track for track in tracks if
+                    search_query.lower() in track['title'].lower() or 
+                    search_query.lower() in track['album'].lower() or
+                    search_query.lower() in track['artist'].lower()]
     return jsonify(search_results)
 
 @app.route('/contact')
