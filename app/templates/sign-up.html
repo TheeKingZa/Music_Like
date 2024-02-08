@@ -7,6 +7,13 @@ Sign Up
 {% block content %}
 <main>
     <div class="custom-div" align="center">
+        <!-- Display error message if login fails -->
+    {% if error %}
+            <div width="100%">
+                <p style="color: red;">{{ error }}</p>
+            </div>
+    {% endif %}
+
         <h2>Sign Up</h2>
         <form id="signupForm" action="/signup" method="POST">
             <hr/>
@@ -72,7 +79,7 @@ Sign Up
            document.querySelector('.custom-div').style.border = '15px solid red';
         });
     {% endif %}
-    
+
     // Function to toggle password visibility
     document.addEventListener("DOMContentLoaded", function() {
         // Find the toggle password icon

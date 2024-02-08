@@ -3,14 +3,14 @@
 from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify
 import json
 from db import read_user_data, add_user_data
+
 # Flask app instance
 app = Flask(__name__)
-# app.secret_key = 'admin'
+
 
 # Load track data from songs.json
 with open('data/songs.json', 'r') as file:
     tracks = json.load(file)
-
 
 # Routes
 @app.route('/')
@@ -51,8 +51,8 @@ def signup():
     # Check if the passwords match
     if password != confirm_password:
         # Passwords don't match, handle this case (e.g., display an error message)
-        error = "Passwords do not match. Please try again."
-        return render_template('sign-up.html', error=error)
+        error = "Passwords do not match."
+        return render_template('sign-up.html', error=error, show_navbar=False)
     
     # Check if the user already exists (e.g., by querying the database)
     # Add your code to check if the user exists
@@ -75,13 +75,14 @@ def signup():
 @app.route('/signUp')
 def signUp():
     # Render SignUp
-    return render_template('sign-up.html', current_page='signUp')
+    show_navbar = request.args.get('show_navbar', True)
+    return render_template('sign-up.html', current_page='signUp', show_navbar=show_navbar)
 
 @app.route('/home')
 def home():
     # Render the home page
     messages = get_flashed_messages('success')
-    return render_template('home.html', messages=messages)
+    return render_template('home.html', messages=messages, current_page='home')
 
 @app.route('/search')
 def search():
@@ -96,12 +97,12 @@ def search():
 @app.route('/contact')
 def contact():
     # Render Contact page
-    return render_template('contact.html')
+    return render_template('contact.html', current_page='contact')
 
 @app.route('/aboutus')
 def aboutus():
     # Render AboutUs page
-    return render_template('aboutus.html')
+    return render_template('aboutus.html', current_page='aboutus')
 
 
     

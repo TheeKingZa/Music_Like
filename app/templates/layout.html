@@ -19,27 +19,11 @@
         <header>
             <div class="logo"></div>
         
-            <div class="new-div" >
+            <div class="new-div">
             <h1><b>Music Like</b></h1>
             </div>
     </header>
 <hr/>
-<!-- NAV BAR here for configurations -->
-
-<!-- Disable Nav bar IF <filename> mentioned -->
-    {% if current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
-
-    <nav>
-        <ul>
-            <li><a href="{{ url_for('aboutus') }}">AboutUs</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact</a></li>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-        </ul>
-    </nav>
-<!-- End IF Statement-->
-{% endif %}
-<!-- NAV BAR ENDS -->
-<br/>
 <div class="main-content">
 <!-- Main Content -->
     {% block content %}
