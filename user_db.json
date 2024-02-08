@@ -1,6 +1,5 @@
 [
     {
-        "user_id": 1,
         "username": null,
         "name": null,
         "surname": null,
@@ -13,75 +12,5 @@
         "surname": "Mathikha",
         "email": "proceedingmc@gmail.com",
         "password": "1234"
-    },
-    {
-        "username": "TheeKingZa",
-        "name": "Pule",
-        "surname": "Mathikha",
-        "email": "proceedingmc@gmail.com",
-        "password": "1234"
-    },
-    {
-        "username": "TheeKingZa",
-        "name": "Pule",
-        "surname": "Mathikha",
-        "email": "proceedingmc@gmail.com",
-        "password": "1234"
-    },
-    {
-        "username": "TheeKing",
-        "name": "Pule Caswell",
-        "surname": "Mathikha",
-        "email": "proceedingmc@gmail.com",
-        "password": "1234"
-    },
-    {
-        "username": "Su",
-        "name": "Thabo",
-        "surname": "Mathikha",
-        "email": "su@example.com",
-        "password": "1234"
-    },
-    {
-        "username": "Su",
-        "name": "Thabo",
-        "surname": "Mathikha",
-        "email": "su@example.com",
-        "password": "1234"
-    },
-    {
-        "username": "Me",
-        "name": "Nam",
-        "surname": "Sin",
-        "email": "my@ex.com",
-        "password": "1234"
-    },
-    {
-        "username": "new",
-        "name": "Neo",
-        "surname": "Dubura",
-        "email": "Dub@exam.com",
-        "password": "1234"
-    },
-    {
-        "username": "new",
-        "name": "Neo",
-        "surname": "Dubura",
-        "email": "Dub@exam.com",
-        "password": "2321"
-    },
-    {
-        "username": "fake1",
-        "name": "fake",
-        "surname": "me",
-        "email": "fake@example.com",
-        "password": "9999"
-    },
-    {
-        "username": "na",
-        "name": "su",
-        "surname": "setre",
-        "email": "ex@ex.com",
-        "password": "7777"
     }
 ]
