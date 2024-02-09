@@ -41,8 +41,8 @@
             <hr/>
             <table>
                 <th></p>Estabished: 2024</p><th>
-                    {% if username != 'Guest' %}
-                    <td><a href="{{ url_for('logout') }}" method="post">logout</a></td>
+                    {% if username != 'Guest' and current_page != 'login' and current_page != '/' %}
+                    <td><a href="{{ url_for('logout') }}">logout</a></td>
                     {% endif %}
         </table>
         </div>
