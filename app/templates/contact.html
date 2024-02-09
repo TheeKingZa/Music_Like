@@ -1,3 +1,4 @@
+
 {% extends 'layout.html'%}
 
 {% block title %}
@@ -6,15 +7,19 @@ Contact
 
 {% block content%}
 <main>
-        <!-- Nav Bar-->
-        {% include 'navBar.html' %}
+    <!-- Nav Bar-->
+    {% include 'navBar.html' %}
     <!-- Contents Here-->
     <div class="custom-div">
         <h2>Contact Us</h2>
-<hr/>
+        <hr/>
 
+        <p>Feel free to reach out to us with any questions, feedback, or inquiries. We're here to help!</p>
+        
+        <h3>Team Members</h3>
+<hr/>
         <table>
-            <tr width="100%">
+            <tr>
                 <th>Name & Surname</th>
                 <th>E-mail</th>
             </tr>
@@ -26,9 +31,41 @@ Contact
                 <td>Mpho Mofokeng</td>
                 <td>christian.mofokeng@gmail.com</td>
             </tr>
-            
         </table>
+<hr/>
+<br/>
+        <div class="custom-div2">
+        <h3>Customer Support</h3>
+        <p>If you need assistance with using our platform or have any technical issues, please don't hesitate to contact our customer support team.</p>
 
+        <h4>Contact Us</h4>
+        <p class="small-text">
+            Have questions,<br/>suggestions, <br/>or feedback?<br/> 
+            We'd love to hear from you! <br/>Feel free to reach out to us at <br/>
+            <a href="mailto:proceedingmc@gmail.com">proceedingmc@gmail.com</a> or <a href="mailto:christian.mofokeng@gmail.com">christian.mofokeng@gmail.com</a> <br/>
+            and we'll get back to you as soon as possible.</p>
+
+
+        <h3>Feedback</h3>
+        <p>We value your feedback! Let us know what you think about Music Like and how we can improve. Send your feedback to <a href="mailto:proceedingmc@gmail.com">proceedingmc@gmail.com</a>.</p>
+
+        <h3>Partnerships</h3>
+        <p>Interested in partnering with Music Like? Contact our partnership team at <br/>
+            <a href="mailto:mailto:christian.mofokeng@gmail.com">christian.mofokeng@gmail.com</a> <br/> or <br/><a href="mailto:proceedingmc@gmail.com">proceedingmc@gmail.com</a><br/>
+            to explore collaboration opportunities.</p>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <ul> 
+                        <li><a href="https://twitter.com/musiclike">Twitter</a></li>
+                        <li><a href="https://facebook.com/musiclike">Facebook</a></li>
+                        <li><a href="https://instagram.com/musiclike">Instagram</a></li>
+                    </ul>
+            </tr>
+        </table>
+        </div>
 
 </main>
 {% endblock %}

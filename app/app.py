@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify
-import json
 from db import read_user_data, add_user_data
+from flask import session
+import json
 
 # Flask app instance
 app = Flask(__name__)
@@ -19,16 +20,17 @@ def index():
 
 @app.route('/login', methods=['POST'])
 def login():
-    
     entered_username = request.form['username']
     entered_password = request.form['password']
-    
+
     # Load user data
     user_data = read_user_data()
     
     # check if the entered user and paswd is matching
     for user in user_data:
         if user['username'] == entered_username and user['password'] == entered_password:
+            # Store the entered usernae in the session
+            session['entered_username'] = entered_username
             return redirect(url_for('home'))
             # Redirect to home page if successful
     else:
@@ -80,9 +82,11 @@ def signUp():
 
 @app.route('/home')
 def home():
+    # Pass the username to the template
+    username = session.get('entered_username', 'Guest')
     # Render the home page
     messages = get_flashed_messages('success')
-    return render_template('home.html', messages=messages, current_page='home')
+    return render_template('home.html', messages=messages, current_page='home', username=username)
 
 @app.route('/search')
 def search():
@@ -97,12 +101,16 @@ def search():
 @app.route('/contact')
 def contact():
     # Render Contact page
-    return render_template('contact.html', current_page='contact')
+    # Pass the username to the template
+    username = session.get('entered_username', 'Guest')
+    return render_template('contact.html', current_page='contact', username=username)
 
 @app.route('/aboutus')
 def aboutus():
     # Render AboutUs page
-    return render_template('aboutus.html', current_page='aboutus')
+    # Pass the username to the template
+    username = session.get('entered_username', 'Guest')
+    return render_template('aboutus.html', current_page='aboutus', username=username)
 
 
     
