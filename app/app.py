@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify
+from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify, session
 from db import read_user_data, add_user_data
-from flask import session
 import json
 
 # Flask app instance
@@ -18,25 +17,39 @@ with open('data/songs.json', 'r') as file:
 def index():
     return render_template('login.html', current_page='/', tracks=tracks)
 
-@app.route('/login', methods=['POST'])
+# Login
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    entered_username = request.form['username']
-    entered_password = request.form['password']
-
-    # Load user data
-    user_data = read_user_data()
-    
-    # check if the entered user and paswd is matching
-    for user in user_data:
-        if user['username'] == entered_username and user['password'] == entered_password:
-            # Store the entered usernae in the session
-            session['entered_username'] = entered_username
-            return redirect(url_for('home'))
+    if request.method == 'POST':
+        # handle login form submission
+        entered_username = request.form['username']
+        entered_password = request.form['password']
+        
+        # Load user data
+        user_data = read_user_data()
+        
+        # check if the entered user and paswd is matching
+        for user in user_data:
+            if user['username'] == entered_username and user['password'] == entered_password:
+                # Store the entered usernae in the session
+                session['entered_username'] = entered_username
+                return redirect(url_for('home'))
             # Redirect to home page if successful
+            else:
+                error = "Invalid Username or Password. Please Try Again"
+                return render_template('login.html', current_page='login', error=error)
     else:
-        error = "Invalid Username or Password. Please Try Again"
-        return render_template('login.html', current_page='login', error=error)
+        # if it's a GET request, Render the lofin page.
+        return render_template('login.html', current_page='login')
 
+@app.route('/logout')
+def logout():
+    # Remove the username from the session
+    session.pop('entered_username', None)
+    # Redirect user to login page
+    return redirect(url_for('login'))
+
+# sign-up Logic
 @app.route('/signup', methods=['POST'])
 def signup():
     # Retrieve form data
@@ -72,8 +85,9 @@ def signup():
     # For demonstration purposes, let's just redirect to the sign-up page again
     add_user_data(user_data)
     flash('Signup successful!', 'success')
+    session['entered_username'] = username
     return redirect(url_for('home'))
-
+# Sign-up redirect
 @app.route('/signUp')
 def signUp():
     # Render SignUp

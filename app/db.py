@@ -18,9 +18,9 @@ def add_user_data(user_data):
     users = read_user_data()
     
     # Check if the username already exists
-    if user in users:
+    for user in users:
         if user['username'] == user_data['username']:
-            # Username Alreaady exists, handle this case
+            # Username already exists, handle this case
             # display error message
             print("Username already exists.")
             return
