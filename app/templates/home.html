@@ -13,7 +13,7 @@ Home
         .search-button {
             background-color: white; /* Change to your desired color */
             color: black; /* Text color */
-            border-color: gold; /* Border color (optional) */
+            border-color: black; /* Border color (optional) */
         }
     
         /* Hover effect for the search button */
@@ -22,9 +22,35 @@ Home
             border-color: white; /* Border color on hover (optional) */
         }
         .custom-input {
-            color: gold;
+            color: black; /* Change to black */
+            background-color: gold;
+            border-color: white;
+        }
+        /* Style for track list */
+        .track-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .track-list-item {
             background-color: black;
-            border-color: gold;
+            border: 1px solid gold;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+
+        .track-list-item h5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: gold; /* Change to black */
+        }
+
+        .track-list-item p {
+            font-size: 14px;
+            margin: 0;
+            color: gold; /* Change to black */
         }
     </style>
 
@@ -41,19 +67,19 @@ Home
         <div class="custom-div">
             <div class="row">
                 <div class="col-md-8">
-                    <h3>Welcome to Your Music Library</h3>
-    <hr/>
+                    <h3>Welcome {{ username }} </h3>
+                    <hr/>
                     <p style="font-size: 15px;">Explore a vast collection of music tracks from your favorite artists, albums, and genres.</p>
-    <hr/>
+                    <hr/>
 
-        </div>
+                </div>
                 <div class="col-md-4">
-                    <form id="searchForm">
-                        <div class="input-group">
+                    <form id="searchForm" class="row g-3 align-items-center">
+                        <div class="col-auto">
                             <input type="text" class="form-control custom-input" id="searchInput" name="searchQuery" placeholder="Search...">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary search-button" type="submit" ><b>Search</b></button>
-                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary search-button" type="submit"><b>Search</b></button>
                         </div>
                     </form>
                 </div>
@@ -81,19 +107,15 @@ Home
                 trackResults.innerHTML = ''; // Clear previous results
                 // Populate track search results
                 data.forEach(track => {
-                    let trackCard = `
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">${track.title}</h5>
-                                    <p class="card-text">Artist: ${track.artist}</p>
-                                    <p class="card-text">Album: ${track.album}</p>
-                                    <p class="card-text">Year: ${track.year_released}</p>
-                                </div>
-                            </div>
-                        </div>
+                    let trackListItem = document.createElement('li');
+                    trackListItem.classList.add('col-md-4', 'mb-4', 'track-list-item');
+                    trackListItem.innerHTML = `
+                        <h5>${track.title}</h5>
+                        <p>Artist: ${track.artist}</p>
+                        <p>Album: ${track.album}</p>
+                        <p>Year: ${track.year_released}</p>
                     `;
-                    trackResults.insertAdjacentHTML('beforeend', trackCard);
+                    trackResults.appendChild(trackListItem);
                 });
             })
             .catch(error => console.error('Error:', error));

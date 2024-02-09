@@ -61,7 +61,7 @@ def signup():
     confirm_password = request.form.get('confirm_password')
     
     # Validate form data (e.g., check for empty fields, validate email format, etc.)
-    # Add your validation code here
+    # Add  validation code here
     
     # Check if the passwords match
     if password != confirm_password:
@@ -71,6 +71,13 @@ def signup():
     
     # Check if the user already exists (e.g., by querying the database)
     # Add your code to check if the user exists
+    user_data = read_user_data()
+    for user in user_data:
+        if user['username'] == username:
+            # user already exist, handle
+            error = "Username already exist"
+            return render_template('sign-up.html', error=error, show_navbar=False) 
+    
     user_data = {
         'username': username,
         'name': name,
@@ -87,6 +94,7 @@ def signup():
     flash('Signup successful!', 'success')
     session['entered_username'] = username
     return redirect(url_for('home'))
+
 # Sign-up redirect
 @app.route('/signUp')
 def signUp():
