@@ -103,10 +103,14 @@ Home
         fetch(`/search?query=${searchQuery}`)
             .then(response => response.json())
             .then(data => {
+                let sortedData = data.sort((a, b) => {
+                    // Sort by title in ascending order
+                    return a.title.localeCompare(b.title);
+                });
                 let trackResults = document.getElementById('trackResults');
                 trackResults.innerHTML = ''; // Clear previous results
                 // Populate track search results
-                data.forEach(track => {
+                sortedData.forEach(track => {
                     let trackListItem = document.createElement('li');
                     trackListItem.classList.add('col-md-4', 'mb-4', 'track-list-item');
                     trackListItem.innerHTML = `
@@ -120,6 +124,7 @@ Home
             })
             .catch(error => console.error('Error:', error));
     });
+    
 </script>
 
 {% endblock %}
