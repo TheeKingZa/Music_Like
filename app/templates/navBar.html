@@ -1,12 +1,22 @@
 <!-- NAV BAR here for configurations -->
 <nav>
-    <ul>
-        <li>{{ username }}</li>
-        <li ><a href="{{ url_for('aboutus') }}">AboutUs</a></li>
-        <li><a href="{{ url_for('contact') }}">Contact</a></li>
-        <li><a href="{{ url_for('home') }}">Home</a></li>
-    </ul>
+    <table>
 
+    <th>   
+        <ul style="display: inline;">
+            <li>{{ username }}</li>
+        </ul>
+    </th>
+    
+    <th style="display: inline;">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li ><a href="{{ url_for('aboutus') }}">AboutUs</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            
+        </ul>
+    </th>
+    </table>
 </nav>
 <hr/>
 <br/>

@@ -17,12 +17,13 @@
 <body>
 
         <header>
-            <div class="logo"></div>
-        
-            <div class="new-div">
+            <div>
+                {% if user_count != 'login' and current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
+            <p style="font-size: 10px; text-align: left;"> Users: {{ user_count}}</p>
+            {% endif %}
             <h1><b>Music Like</b></h1>
-            </div>
-    </header>
+            </div>   
+        </header>
 <hr/>
 <div class="main-content">
 <!-- Main Content -->
@@ -40,9 +41,9 @@
             <div align="right">
             <hr/>
             <table>
-                <th></p>Estabished: 2024</p><th>
+                <th style="display: inline">2024 &trade;<th>
                     {% if username != 'Guest' and current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
-                    <td><a href="{{ url_for('logout') }}">logout</a></td>
+                    <th><a href="{{ url_for('logout') }}">logout</a></th>
                     {% endif %}
         </table>
         </div>
