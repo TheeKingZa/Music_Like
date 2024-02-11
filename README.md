@@ -37,5 +37,5 @@
   ├── requirements.txt         # List of project dependencies
   ├── .gitignore               # Specify files/folders to be ignored by version control
   ├── .user_db.json            # private file for userdatabase
-
+.
 ```
