@@ -12,6 +12,13 @@ app.secret_key  = 'admin'
 with open('data/songs.json', 'r') as file:
     tracks = json.load(file)
 
+# Count Users
+def count_users():
+    with open('.user_db.json') as file:
+        user_data = json.load(file)
+        return len(user_data)
+
+
 # Routes
 @app.route('/')
 def index():
@@ -106,9 +113,10 @@ def signUp():
 def home():
     # Pass the username to the template
     username = session.get('entered_username', 'Guest')
+    user_count = count_users()
     # Render the home page
     messages = get_flashed_messages('success')
-    return render_template('home.html', messages=messages, current_page='home', username=username)
+    return render_template('home.html', messages=messages, current_page='home', username=username, user_count=user_count)
 
 @app.route('/search')
 def search():
@@ -123,16 +131,18 @@ def search():
 @app.route('/contact')
 def contact():
     # Render Contact page
+    user_count = count_users()
     # Pass the username to the template
     username = session.get('entered_username', 'Guest')
-    return render_template('contact.html', current_page='contact', username=username)
+    return render_template('contact.html', current_page='contact', username=username, user_count=user_count)
 
 @app.route('/aboutus')
 def aboutus():
     # Render AboutUs page
+    user_count = count_users()
     # Pass the username to the template
     username = session.get('entered_username', 'Guest')
-    return render_template('aboutus.html', current_page='aboutus', username=username)
+    return render_template('aboutus.html', current_page='aboutus', username=username, user_count=user_count)
 
 
     

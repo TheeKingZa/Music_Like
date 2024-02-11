@@ -30,6 +30,7 @@ body {
 
 .new-div {
     color: gold;
+    position: fixed;
 }
 
 hr {
@@ -92,6 +93,6 @@ li a:active {
     bottom: 0;
     width: 100%;
     color: gold;
-    padding: 5px;
+    padding: 0px;
     text-align: right;
 }

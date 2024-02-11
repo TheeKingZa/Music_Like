@@ -6,6 +6,14 @@ Login
 
 {% block content %}
 <main>
+
+    <style>
+        .custom-input2 {
+            color: black;
+            background-color: gold;
+            border-color: white;
+        }
+    </style>
     <br/>
     <br/>
     <div class="custom-div" align="center">
@@ -14,12 +22,12 @@ Login
         <form id="loginForm" action="/login" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input class="custom-input2" type="text" id="username" name="username" placeholder="Username" required>
             </div>
         <br/>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input class="custom-input2" type="password" id="password" name="password" placeholder="Password" required>
             </div>
         <hr/>
         <br/>
