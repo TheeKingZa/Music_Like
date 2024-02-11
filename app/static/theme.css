@@ -30,6 +30,7 @@ body {
 
 .new-div {
     color: gold;
+    position: fixed;
 }
 
 hr {
@@ -44,10 +45,10 @@ p {
 
 /* Set white color for other elements */
 /* Add specific selectors as needed */
-h1, h2, h3 , h4{
+h1, h2, h3 , h4 {
     color: gold;
     padding: 10px
-    font-family: 'myFont', arial;
+    font-family: arial;
 }
 
 /* Set white color for links */
@@ -55,6 +56,7 @@ a {
     color: white;
 }
 
+/* unordered li*/
 ul  {
     list-style-type: none;
     margin: 0;
@@ -62,18 +64,19 @@ ul  {
     /* background-color: blue; */
 }
 
+/*li */
 li {
-    float: right;
+    float: left;
     padding: 0.15px 6px;
 }
 
 
-/* Style visited links */
+/* Style a links */
 a:visited {
     color: white;
 }
 
-/* Style hover effect for links */
+/* Style hover effect for li */
 li a:hover {
     color: gold;
 }
@@ -82,7 +85,7 @@ li a:hover {
 li a:active {
     color: gold;
 }
-
+/* Footer*/
 .footer {
     position: fixed;
     background-color: black;
@@ -90,6 +93,6 @@ li a:active {
     bottom: 0;
     width: 100%;
     color: gold;
-    padding: 5px;
+    padding: 0px;
     text-align: right;
 }

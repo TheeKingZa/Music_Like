@@ -12,6 +12,13 @@ app.secret_key  = 'admin'
 with open('data/songs.json', 'r') as file:
     tracks = json.load(file)
 
+# Count Users
+def count_users():
+    with open('.user_db.json') as file:
+        user_data = json.load(file)
+        return len(user_data)
+
+
 # Routes
 @app.route('/')
 def index():
@@ -61,7 +68,7 @@ def signup():
     confirm_password = request.form.get('confirm_password')
     
     # Validate form data (e.g., check for empty fields, validate email format, etc.)
-    # Add your validation code here
+    # Add  validation code here
     
     # Check if the passwords match
     if password != confirm_password:
@@ -71,6 +78,13 @@ def signup():
     
     # Check if the user already exists (e.g., by querying the database)
     # Add your code to check if the user exists
+    user_data = read_user_data()
+    for user in user_data:
+        if user['username'] == username:
+            # user already exist, handle
+            error = "Username already exist"
+            return render_template('sign-up.html', error=error, show_navbar=False) 
+    
     user_data = {
         'username': username,
         'name': name,
@@ -87,6 +101,7 @@ def signup():
     flash('Signup successful!', 'success')
     session['entered_username'] = username
     return redirect(url_for('home'))
+
 # Sign-up redirect
 @app.route('/signUp')
 def signUp():
@@ -98,9 +113,10 @@ def signUp():
 def home():
     # Pass the username to the template
     username = session.get('entered_username', 'Guest')
+    user_count = count_users()
     # Render the home page
     messages = get_flashed_messages('success')
-    return render_template('home.html', messages=messages, current_page='home', username=username)
+    return render_template('home.html', messages=messages, current_page='home', username=username, user_count=user_count)
 
 @app.route('/search')
 def search():
@@ -115,16 +131,18 @@ def search():
 @app.route('/contact')
 def contact():
     # Render Contact page
+    user_count = count_users()
     # Pass the username to the template
     username = session.get('entered_username', 'Guest')
-    return render_template('contact.html', current_page='contact', username=username)
+    return render_template('contact.html', current_page='contact', username=username, user_count=user_count)
 
 @app.route('/aboutus')
 def aboutus():
     # Render AboutUs page
+    user_count = count_users()
     # Pass the username to the template
     username = session.get('entered_username', 'Guest')
-    return render_template('aboutus.html', current_page='aboutus', username=username)
+    return render_template('aboutus.html', current_page='aboutus', username=username, user_count=user_count)
 
 
     
