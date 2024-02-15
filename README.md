@@ -1,4 +1,4 @@
-# Music_like
+# Music_Like
 
 [application](https://github.com/TheeKingZa/Music_like/blob/master/app/app.py)
 
