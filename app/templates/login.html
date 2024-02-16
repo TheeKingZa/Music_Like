@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}                           
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}                                   <main>
+
+    <style>                                                   .custom-input2 {                                          color: black;
+            background-color: gold;
+            border-color: white;
+        }
+    </style>
+    <br/>
+    <br/>
+    <div class="custom-div" align="center">
+        <h2><u>Login</u></h2>
+        <hr/>
+        <form id="loginForm" action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input class="custom-input2" type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+        <br/>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input class="custom-input2" type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+        <hr/>
+        <br/>
+            <!-- Login button-->
+            <button type="submit" style="background-color: gold;">Login</button>
+            <!-- Sign Up button -->
+            <button type="submit" style="background-color: black;"><a href="{{ url_for('signUp') }}">Sign Up</a></button>
+        </form>
+        <!-- Display error message if login fails -->
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+    </div>
+</main>
+
+<script>
+    // JavaScript function to change border color if login fails
+    {% if error %}
+        document.addEventListener("DOMContentLoaded", function() {
+           document.querySelector('.custom-div').style.border = '15px solid red';
+        });
+    {% endif %}
+</script>
+{% endblock %}
