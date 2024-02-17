@@ -53,8 +53,7 @@ Home
             color: gold;
         }
     </style>
-
-    <!-- Error messages when needed -->>
+    <!-- Error messages when needed -->
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <div class="alert alert-success" role="alert">
@@ -64,6 +63,7 @@ Home
             </div>
         {% endif %}
     {% endwith %}
+    
     <section class="welcome-section">
         <div class="custom-div">
             <div class="row">
@@ -95,7 +95,6 @@ Home
         </div>
     </section>
 </main>
-
 <script>
     document.getElementById('searchForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
@@ -125,7 +124,6 @@ Home
             })
             .catch(error => console.error('Error:', error));
     });
-    
 </script>
 
 {% endblock %}

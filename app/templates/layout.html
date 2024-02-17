@@ -12,6 +12,7 @@
 		 <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
 		 <link rel="stylesheet" href="{{ url_for('static', filename='tstyle.css') }}">
          <link rel="stylesheet" href="{{ url_for('static', filename='accordion.css') }}">
+         <link rel="stylesheet" href="{{ url_for('static', filename='loader.css') }}">
 
         </head>
 
@@ -28,6 +29,7 @@
         </header>
 <hr/>
 <div class="main-content">
+    <div class="loader"></div>
 <!-- Main Content -->
     {% block content %}
 
@@ -53,7 +55,6 @@
         </footer>
 
         <script>
-
             var acc = document
             .getElementsByClassName("accordion");
             
@@ -68,5 +69,7 @@
             }
             
             </script>
+
+            <script src="static/loader.js"></script>
 </body>
 </html>
