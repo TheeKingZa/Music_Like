@@ -47,8 +47,8 @@
             <hr/>
             <table>
                 <th style="display: inline">2024 &trade;<th>
-                    {% if username != 'Guest' and current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
-                    <th><a href="{{ url_for('logout') }}">logout</a></th>
+                    {% if current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
+                    <th><a href="{{ url_for('logout') }}" style="color: red;">logout</a></th>
                     {% endif %}
         </table>
         </div>

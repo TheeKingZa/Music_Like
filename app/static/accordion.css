@@ -48,11 +48,13 @@ div.panel {
     transition: 0.6s ease-in-out;
     opacity: 0;
 }
-
+/* Drop downs */
+/* panel view size */
 div.panel.show {
     opacity: 1;
-    max-height: 800px;
+    max-height: 1000px;
 }
-    th {
-	    text-align: center;
-    }
+
+th {
+    text-align: center;
+}

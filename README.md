@@ -4,7 +4,7 @@
 
 ```
   Application: Music_Like
-  Tagline: A music recommendation application
+  Tagline: Music Like  Never Before.
 ```
 
 # Application Structure
@@ -16,26 +16,30 @@
   ├── app/
   │   ├── static/
   │   │   └── theme.css      # CSS for styling
-  │   │   └── tstyle.css
+  │   │   └── table_style.css
+  │   │   └── accordion.css
+  │   │   └── loader.js
+  │   │
   │   ├── templates/
-  │   │   ├── layout.html    # HTML templates
-  │   │   ├── login.html
-  │   │   ├── sign-up.html
-  │   │   ├── home.html      
-  │   │   ├── contact.html
-  │   │   ├── aboutus.html
-  │   │   ├── navBar.html
+  │   │   └── layout.html    # HTML templates
+  │   │   └── login.html
+  │   │   └── sign-up.html
+  │   │   └── home.html      
+  │   │   └── contact.html
+  │   │   └── aboutus.html
+  │   │   └── navBar.html  
+  │   │
   │   ├── __init__.py          # python instance
-  │   ├── app.py               # Flask application logic
-  │   ├── model.py             # Machine learning model logic
-  │   ├── db.py                # Database interaction logic
+  │   │
+  │   └── app.py               # Flask application logic
+  │   └── db.py                # Database interaction logic
   │
   ├── data/
-  │   ├── songs.json           # Data_set of songs with features
+  │   └── songs.json           # Data_set of songs with features
   │
   ├── README.md                # Project README with project name and tagline
   ├── requirements.txt         # List of project dependencies
   ├── .gitignore               # Specify files/folders to be ignored by version control
-  ├── .user_db.json            # private file for userdatabase
+  └── .user_db.json            # private file for userdatabase
 .
 ```
