@@ -11,15 +11,15 @@ Home
     <style>
         /* Define a custom class for the search button */
         .search-button {
-            background-color: white; /* Change to your desired color */
+            background-color: white; /* background-color */
             color: black; /* Text color */
-            border-color: black; /* Border color (optional) */
+            border-color: black; /* Border-color*/
         }
     
         /* Hover effect for the search button */
         .search-button:hover {
-            background-color: gold; /* Change to your desired hover color */
-            border-color: white; /* Border color on hover (optional) */
+            background-color: gold;
+            border-color: white;
         }
         .custom-input {
             color: black; /* Change to black */
@@ -44,16 +44,17 @@ Home
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 5px;
-            color: gold; /* Change to black */
+            color: gold;
         }
 
         .track-list-item p {
             font-size: 14px;
             margin: 0;
-            color: gold; /* Change to black */
+            color: gold;
         }
     </style>
 
+    <!-- Error messages when needed -->>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <div class="alert alert-success" role="alert">

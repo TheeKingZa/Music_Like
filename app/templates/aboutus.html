@@ -17,19 +17,23 @@ AboutUs
     </style>
         <!-- Nav Bar-->
         {% include 'navBar.html' %}
-        
     <div class="custom-div">
+        <button class="accordion">
         <h1>About Our App</h1>
+    
 <hr/>
+    
         <p class="medium-text">Music Like is a Web Application That helps search for Music Recommendations.</p>
         <!-- Add more information about the app here -->
-    </div>
+    </button>
 
+    <div class="panel">
     <div class="custom-div2">       
         <button class="accordion" style="text-align: center;">
             <h2>Our Mission</h2>
         </button> 
             <div class="panel">
+                <hr/>
             <p class="small-text">
                 At Music Like, we are passionate about music and technology.<br/>
                 Our mission is to provide music enthusiasts with a platform where they can discover music. <br/></p>
@@ -37,36 +41,42 @@ AboutUs
             </div>
     <hr/>
 <br/>   
-            <h1>What We Offer</h1>
-<hr/>
-            <h4>Discover Music</h4>
+            <button class="accordion">
+                <h1>What We Offer</h1>
+                <hr/>
+            </button>
+            <div class="panel">
+            <h4><u>Discover Music</u></h4>
             <p class="small-text">
                 Explore our vast collection of tracks spanning various
                 genres, artists, and albums.<br/>
                 With our intuitive search and recommendation features,
                 you can easily find the perfect song for any mood or occasion.</p>
         
-            <h4>Search Personalized Songs</h4>
+            <h4><u>Search Songs</u></h4>
             <p class="small-text">
                 Search your favorite tracks by searching your favorite tracks or artists.<br/>
                 Whether you're into upbeat pop hits, soothing jazz melodies, or hard-hitting rock anthems,<br/>
                 Music Like allows you to search songs that reflect your unique taste in music.</p>
         
-            <h4>Our Team</h4>
+            <h4><u>Our Team</u></h4>
             <p class="small-text">
                 Music Like was founded by a team of dedicated music lovers and tech enthusiasts <br/>
                 who share a common goal of bringing the joy of music to people worldwide. <br/>
                 Our team is committed to continuously improving the Music Like platform and providing users <br/>
                 with the best possible music discovery experience.</p>
         
-            <h4>Stay Connected</h4>
+            <h4><u>Stay Connected</u></h4>
             <p class="small-text">
                 Follow us on social media to stay updated with the <br/>
-                latest news, features, and events from Music Like:
+                latest news, features, and events from Music Like.
             </p>
             <br/>
             <br/>
-<hr/>
+        </div>
+    </div>
+</div>
+    <hr/>
             <ul>
                 <li><a href="https://github.com/TheeKingZa/Music_like/tree/master/README.md">Github</a></li>
             </ul>        
