@@ -18,12 +18,12 @@
   
   .loader::after {
     content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: gold;
-    border-radius: 50%;
-    animation: loading 1s ease infinite;
+    width: 100px;
+    height: 100px;
+    border: 15px solid gold;
+    border-top-color: white;
+    border-radius: 100%;
+    animation: loading 2s ease infinite;
   }
   
   @keyframes loading {
