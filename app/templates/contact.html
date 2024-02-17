@@ -7,93 +7,21 @@ Contact
 
 {% block content%}
 <main>
-<style>
-
-	button.accordion {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-
-button.accordion.active,
-button.accordion:hover {
-
-    background-color: black;
-}
-
-
-button.accordion:after {
-
-/* Unicode character for "plus" sign
-(+) is '\02795' */
-
-    content: '\02795';
-    font-size: 10px;
-    color: gold;
-    float: right;
-    margin-left: 5px;
-}
-
-
-button.accordion.active:after {
-
-/* Unicode character for "minus" sign
-(-) is '\2796' */
-
-    content: "\2796";
-}
-
-
-div.panel {
-    padding: 0 10px;
-    background-color: black;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;
-}
-
-div.panel.show {
-    opacity: 1;
-    max-height: 500px;
-}
-    th {
-	    text-align: center;
-    }
-</style>
-
-
-
-
     <!-- Nav Bar-->
     {% include 'navBar.html' %}
     <!-- Contents Here-->
-    <div class="custom-div">
-	    <button class="accordion" style="text-align: center;"><h3>Contact Us</h3>
-</button>
-
-<div class="panel">
-
-	<p>Feel free to reach out to us with any questions, feedback, or inquiries.<br/> We're here to help!</p>
-
-</div>
-
+<div class="custom-div">
 <button class="accordion" style="text-align: center;">
 	<h3>Team Members</h3>
 </button>
 <div class="panel">
+    <hr/>
         <table style="display: block;">
             <tr>
                 <th>Name & Surname</th>
                 <th>E-mail</th>
             </tr>
+        
             <tr>    
                 <td>Pule Mathikha</td>
                 <td><a href="mailto:mailto:proceedingmcg@gmail.com">proceedingmc@gmail.com</a></td>
@@ -113,10 +41,10 @@ div.panel.show {
         <h3>Customer Support</h3>
 </button>
 <div class="panel">
-        <hr/>
+    <hr/>
         <p>If you need assistance with using our platform or have any technical issues,<br/>
             please don't hesitate to contact our customer support team.</p>
-
+            <hr/>
         <h4><u>Contact Us</u></h4>
         <p class="small-text">
             Have questions, suggestions, <br/>or feedback?<br/> 
@@ -152,22 +80,8 @@ div.panel.show {
         </table>
         </div>
 
-	<script>
+    </div>
 
-var acc = document
-.getElementsByClassName("accordion");
-
-var i;
-
-for (i = 0; i < acc.length; i++) {
- acc[i].onclick = function(){
-  this.classList.toggle("active");
-  this.nextElementSibling.classList
-  .toggle("show");
-  }
-}
-
-</script>
 
 
 </main>

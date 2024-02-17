@@ -11,6 +11,8 @@
 		 <!-- Link to your theme.css file -->
 		 <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
 		 <link rel="stylesheet" href="{{ url_for('static', filename='tstyle.css') }}">
+         <link rel="stylesheet" href="{{ url_for('static', filename='accordion.css') }}">
+
         </head>
 
 
@@ -35,6 +37,7 @@
 <br/>
 <br/>
 <br/>
+
 <!-- Footer -->
     
         <footer class="footer">
@@ -48,6 +51,22 @@
         </table>
         </div>
         </footer>
-    
+
+        <script>
+
+            var acc = document
+            .getElementsByClassName("accordion");
+            
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+             acc[i].onclick = function(){
+              this.classList.toggle("active");
+              this.nextElementSibling.classList
+              .toggle("show");
+              }
+            }
+            
+            </script>
 </body>
 </html>
