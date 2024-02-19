@@ -1,6 +1,13 @@
 #!/usr/bin/python3
-
-from flask import Flask, render_template, request, url_for, redirect, flash, get_flashed_messages, jsonify, session
+import requests
+import configparser
+from flask import (
+    Flask, render_template,
+    request, url_for,
+    redirect, flash,
+    get_flashed_messages,
+    jsonify, session
+)
 from db import read_user_data, add_user_data
 import json
 
@@ -158,4 +165,4 @@ def aboutus():
 
     
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
