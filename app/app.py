@@ -49,6 +49,16 @@ def login():
         # if it's a GET request, Render the lofin page.
         return render_template('login.html', current_page='login')
 
+
+@app.route("/username")
+def username():
+    if "username" in session:
+        username = session['username']
+        return f"<h1>{ username }</h1>"
+    else:
+        return redirect(url_for('login'))
+
+
 @app.route('/logout')
 def logout():
     # Remove the username from the session
@@ -101,6 +111,7 @@ def signup():
     flash('Signup successful!', 'success')
     session['entered_username'] = username
     return redirect(url_for('home'))
+
 
 # Sign-up redirect
 @app.route('/signUp')
