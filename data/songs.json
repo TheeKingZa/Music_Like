@@ -1,677 +1,440 @@
 [
     {
-      "track_id": 1,
-      "artist": "TheeKingZa",
-      "title": "Tell Me",
-      "album": "Vices",
-      "year_released": 2023,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 2,
-      "artist": "Earle Fari",
-      "title": "Lose Myself",
-      "album": "Common Tape",
-      "year_released": 2020,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 3,
-      "artist": "Kanye West",
-      "title": "We Major(feat Really Doe)",
-      "album": "Late Registration",
-      "year_released": 2005,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 4,
-      "artist": "Childish Gambino",
-      "title": "Redbone",
-      "album": "Awaken, My Love!",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 5,
-      "artist": "Travis Scott",
-      "title": "SICKO MODE",
-      "album": "Astroworld",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 6,
-      "artist": "J. Cole",
-      "title": "No Role Modelz",
-      "album": "2014 Forest Hills Drive",
-      "year_released": 2014,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 7,
-      "artist": "Chance the Rapper",
-      "title": "No Problem",
-      "album": "Coloring Book",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 8,
-      "artist": "Cardi B",
-      "title": "Bodak Yellow",
-      "album": "Invasion of Privacy",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 9,
-      "artist": "Logic",
-      "title": "1-800-273-8255",
-      "album": "Everybody",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 10,
-      "artist": "Lil Wayne",
-      "title": "A Milli",
-      "album": "Tha Carter III",
-      "year_released": 2008,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 11,
-      "artist": "ASAP Rocky",
-      "title": "Praise the Lord (Da Shine)",
-      "album": "Testing",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 12,
-      "artist": "Migos",
-      "title": "Bad and Boujee",
-      "album": "Culture",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 13,
-      "artist": "Future",
-      "title": "Mask Off",
-      "album": "Future",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 14,
-      "artist": "Kendrick Lamar",
-      "title": "HUMBLE.",
-      "album": "DAMN.",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 15,
-      "artist": "Drake",
-      "title": "Hotline Bling",
-      "album": "Views",
-      "year_released": 2015,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 16,
-      "artist": "Kanye West",
-      "title": "Stronger",
-      "album": "Graduation",
-      "year_released": 2007,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 17,
-      "artist": "Jay-Z",
-      "title": "Empire State of Mind",
-      "album": "The Blueprint 3",
-      "year_released": 2009,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 18,
-      "artist": "Eminem",
-      "title": "Lose Yourself",
-      "album": "8 Mile Soundtrack",
-      "year_released": 2002,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 19,
-      "artist": "Nas",
-      "title": "N.Y. State of Mind",
-      "album": "Illmatic",
-      "year_released": 1994,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 20,
-      "artist": "OutKast",
-      "title": "Ms. Jackson",
-      "album": "Stankonia",
-      "year_released": 2000,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 21,
-      "artist": "Tupac Shakur",
-      "title": "California Love",
-      "album": "All Eyez on Me",
-      "year_released": 1995,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 22,
-      "artist": "The Notorious B.I.G.",
-      "title": "Juicy",
-      "album": "Ready to Die",
-      "year_released": 1994,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 23,
-      "artist": "Lauryn Hill",
-      "title": "Doo Wop (That Thing)",
-      "album": "The Miseducation of Lauryn Hill",
-      "year_released": 1998,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 24,
-      "artist": "Tyler, The Creator",
-      "title": "EARFQUAKE",
-      "album": "IGOR",
-      "year_released": 2019,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 25,
-      "artist": "Lil Uzi Vert",
-      "title": "XO TOUR Llif3",
-      "album": "Luv Is Rage 2",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 26,
-      "artist": "21 Savage",
-      "title": "Bank Account",
-      "album": "Issa Album",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 27,
-      "artist": "JID",
-      "title": "151 Rum",
-      "album": "DiCaprio 2",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 28,
-      "artist": "Sheck Wes",
-      "title": "Mo Bamba",
-      "album": "MUDBOY",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 29,
-      "artist": "Meek Mill",
-      "title": "Dreams and Nightmares",
-      "album": "Dreams and Nightmares",
-      "year_released": 2012,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 30,
-      "artist": "Anderson .Paak",
-      "title": "Come Down",
-      "album": "Malibu",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 31,
-      "artist": "Juice WRLD",
-      "title": "Lucid Dreams",
-      "album": "Goodbye & Good Riddance",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 32,
-      "artist": "A Boogie wit da Hoodie",
-      "title": "Drowning",
-      "album": "The Bigger Artist",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 33,
-      "artist": "Playboi Carti",
-      "title": "Magnolia",
-      "album": "Playboi Carti",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 34,
-      "artist": "Kendrick Lamar",
-      "title": "Alright",
-      "album": "To Pimp a Butterfly",
-      "year_released": 2015,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 35,
-      "artist": "Drake",
-      "title": "God's Plan",
-      "album": "Scorpion",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 36,
-      "artist": "J. Cole",
-      "title": "Middle Child",
-      "album": "The Off-Season",
-      "year_released": 2019,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 37,
-      "artist": "Travis Scott",
-      "title": "SICKO MODE",
-      "album": "Astroworld",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 38,
-      "artist": "Childish Gambino",
-      "title": "This Is America",
-      "album": "Single",
-      "year_released": 2018,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 39,
-      "artist": "Post Malone",
-      "title": "rockstar",
-      "album": "beerbongs & bentleys",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 40,
-      "artist": "Eminem",
-      "title": "Rap God",
-      "album": "The Marshall Mathers LP 2",
-      "year_released": 2013,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 41,
-      "artist": "Kanye West",
-      "title": "Runaway",
-      "album": "My Beautiful Dark Twisted Fantasy",
-      "year_released": 2010,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 42,
-      "artist": "Cardi B",
-      "title": "WAP (feat. Megan Thee Stallion)",
-      "album": "Single",
-      "year_released": 2020,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 43,
-      "artist": "Lil Nas X",
-      "title": "Old Town Road (feat. Billy Ray Cyrus)",
-      "album": "7",
-      "year_released": 2019,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 44,
-      "artist": "Ariana Grande",
-      "title": "Thank U, Next",
-      "album": "Thank U, Next",
-      "year_released": 2019,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 45,
-      "artist": "The Weeknd",
-      "title": "Blinding Lights",
-      "album": "After Hours",
-      "year_released": 2020,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 46,
-      "artist": "Beyoncé",
-      "title": "Single Ladies (Put a Ring on It)",
-      "album": "I Am... Sasha Fierce",
-      "year_released": 2008,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 47,
-      "artist": "Rihanna",
-      "title": "Umbrella",
-      "album": "Good Girl Gone Bad",
-      "year_released": 2007,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 48,
-      "artist": "Bruno Mars",
-      "title": "24K Magic",
-      "album": "24K Magic",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 49,
-      "artist": "Adele",
-      "title": "Rolling in the Deep",
-      "album": "21",
-      "year_released": 2010,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 50,
-      "artist": "Frank Ocean",
-      "title": "Thinkin Bout You",
-      "album": "Channel Orange",
-      "year_released": 2012,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 51,
-      "artist": "Lizzo",
-      "title": "Truth Hurts",
-      "album": "Cuz I Love You",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 52,
-      "artist": "Solange",
-      "title": "Cranes in the Sky",
-      "album": "A Seat at the Table",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 53,
-      "artist": "John Legend",
-      "title": "All of Me",
-      "album": "Love in the Future",
-      "year_released": 2013,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 54,
-      "artist": "Dua Lipa",
-      "title": "Don't Start Now",
-      "album": "Future Nostalgia",
-      "year_released": 2019,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 55,
-      "artist": "Justin Timberlake",
-      "title": "Can't Stop the Feeling!",
-      "album": "Trolls: Original Motion Picture Soundtrack",
-      "year_released": 2016,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 56,
-      "artist": "SZA",
-      "title": "Love Galore",
-      "album": "Ctrl",
-      "year_released": 2017,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 57,
-      "artist": "Alicia Keys",
-      "title": "If I Ain't Got You",
-      "album": "The Diary of Alicia Keys",
-      "year_released": 2003,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 58,
-      "artist": "Sam Smith",
-      "title": "Stay with Me",
-      "album": "In the Lonely Hour",
-      "year_released": 2014,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 59,
-      "artist": "Mariah Carey",
-      "title": "We Belong Together",
-      "album": "The Emancipation of Mimi",
-      "year_released": 2005,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 60,
-      "artist": "Beyoncé",
-      "title": "Crazy in Love",
-      "album": "Dangerously in Love",
-      "year_released": 2003,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 61,
-      "artist": "Usher",
-      "title": "Yeah!",
-      "album": "Confessions",
-      "year_released": 2004,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 62,
-      "artist": "Whitney Houston",
-      "title": "I Will Always Love You",
-      "album": "The Bodyguard: Original Soundtrack Album",
-      "year_released": 1992,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 63,
-      "artist": "Stevie Wonder",
-      "title": "Superstition",
-      "album": "Talking Book",
-      "year_released": 1972,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 64,
-      "artist": "Metallica",
-      "title": "Enter Sandman",
-      "album": "Metallica",
-      "year_released": 1991,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 65,
-      "artist": "Linkin Park",
-      "title": "In the End",
-      "album": "Hybrid Theory",
-      "year_released": 2000,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 66,
-      "artist": "System of a Down",
-      "title": "Chop Suey!",
-      "album": "Toxicity",
-      "year_released": 2001,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 67,
-      "artist": "Nirvana",
-      "title": "Smells Like Teen Spirit",
-      "album": "Nevermind",
-      "year_released": 1991,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 68,
-      "artist": "Red Hot Chili Peppers",
-      "title": "Under the Bridge",
-      "album": "Blood Sugar Sex Magik",
-      "year_released": 1991,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 69,
-      "artist": "Green Day",
-      "title": "Basket Case",
-      "album": "Dookie",
-      "year_released": 1994,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 70,
-      "artist": "Foo Fighters",
-      "title": "Everlong",
-      "album": "The Colour and the Shape",
-      "year_released": 1997,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 71,
-      "artist": "Pearl Jam",
-      "title": "Jeremy",
-      "album": "Ten",
-      "year_released": 1991,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 72,
-      "artist": "Soundgarden",
-      "title": "Black Hole Sun",
-      "album": "Superunknown",
-      "year_released": 1994,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 73,
-      "artist": "Alice in Chains",
-      "title": "Man in the Box",
-      "album": "Facelift",
-      "year_released": 1990,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 74,
-      "artist": "Guns N' Roses",
-      "title": "Sweet Child o' Mine",
-      "album": "Appetite for Destruction",
-      "year_released": 1987,
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "track_id": 75,
-      "artist": "Motörhead",
-      "title": "Ace of Spades",
-      "album": "Ace of Spades",
-      "year_released": 1980,
-      "likes": 0,
-      "dislikes": 0
+        "artist": "TheeKingZa",
+        "title": "Tell Me",
+        "album": "Vices",
+        "year_released": 2023
+    },
+    {
+        "artist": "Earle Fari",
+        "title": "Lose Myself",
+        "album": "Common Tape",
+        "year_released": 2020
+    },
+    {
+        "artist": "Kanye West",
+        "title": "We Major(feat Really Doe)",
+        "album": "Late Registration",
+        "year_released": 2005
+    },
+    {
+        "artist": "Childish Gambino",
+        "title": "Redbone",
+        "album": "Awaken, My Love!",
+        "year_released": 2016
+    },
+    {
+        "artist": "Travis Scott",
+        "title": "SICKO MODE",
+        "album": "Astroworld",
+        "year_released": 2018
+    },
+    {
+        "artist": "J. Cole",
+        "title": "No Role Modelz",
+        "album": "2014 Forest Hills Drive",
+        "year_released": 2014
+    },
+    {
+        "artist": "Chance the Rapper",
+        "title": "No Problem",
+        "album": "Coloring Book",
+        "year_released": 2016
+    },
+    {
+        "artist": "Cardi B",
+        "title": "Bodak Yellow",
+        "album": "Invasion of Privacy",
+        "year_released": 2017
+    },
+    {
+        "artist": "Logic",
+        "title": "1-800-273-8255",
+        "album": "Everybody",
+        "year_released": 2017
+    },
+    {
+        "artist": "Lil Wayne",
+        "title": "A Milli",
+        "album": "Tha Carter III",
+        "year_released": 2008
+    },
+    {
+        "artist": "ASAP Rocky",
+        "title": "Praise the Lord (Da Shine)",
+        "album": "Testing",
+        "year_released": 2018
+    },
+    {
+        "artist": "Migos",
+        "title": "Bad and Boujee",
+        "album": "Culture",
+        "year_released": 2016
+    },
+    {
+        "artist": "Future",
+        "title": "Mask Off",
+        "album": "Future",
+        "year_released": 2017
+    },
+    {
+        "artist": "Kendrick Lamar",
+        "title": "HUMBLE.",
+        "album": "DAMN.",
+        "year_released": 2017
+    },
+    {
+        "artist": "Drake",
+        "title": "Hotline Bling",
+        "album": "Views",
+        "year_released": 2015
+    },
+    {
+        "artist": "Kanye West",
+        "title": "Stronger",
+        "album": "Graduation",
+        "year_released": 2007
+    },
+    {
+        "artist": "Jay-Z",
+        "title": "Empire State of Mind",
+        "album": "The Blueprint 3",
+        "year_released": 2009
+    },
+    {
+        "artist": "Eminem",
+        "title": "Lose Yourself",
+        "album": "8 Mile Soundtrack",
+        "year_released": 2002
+    },
+    {
+        "artist": "Nas",
+        "title": "N.Y. State of Mind",
+        "album": "Illmatic",
+        "year_released": 1994
+    },
+    {
+        "artist": "OutKast",
+        "title": "Ms. Jackson",
+        "album": "Stankonia",
+        "year_released": 2000
+    },
+    {
+        "artist": "Tupac Shakur",
+        "title": "California Love",
+        "album": "All Eyez on Me",
+        "year_released": 1995
+    },
+    {
+        "artist": "The Notorious B.I.G.",
+        "title": "Juicy",
+        "album": "Ready to Die",
+        "year_released": 1994
+    },
+    {
+        "artist": "Lauryn Hill",
+        "title": "Doo Wop (That Thing)",
+        "album": "The Miseducation of Lauryn Hill",
+        "year_released": 1998
+    },
+    {
+        "artist": "Tyler, The Creator",
+        "title": "EARFQUAKE",
+        "album": "IGOR",
+        "year_released": 2019
+    },
+    {
+        "artist": "Lil Uzi Vert",
+        "title": "XO TOUR Llif3",
+        "album": "Luv Is Rage 2",
+        "year_released": 2017
+    },
+    {
+        "artist": "21 Savage",
+        "title": "Bank Account",
+        "album": "Issa Album",
+        "year_released": 2017
+    },
+    {
+        "artist": "JID",
+        "title": "151 Rum",
+        "album": "DiCaprio 2",
+        "year_released": 2018
+    },
+    {
+        "artist": "Sheck Wes",
+        "title": "Mo Bamba",
+        "album": "MUDBOY",
+        "year_released": 2018
+    },
+    {
+        "artist": "Meek Mill",
+        "title": "Dreams and Nightmares",
+        "album": "Dreams and Nightmares",
+        "year_released": 2012
+    },
+    {
+        "artist": "Anderson .Paak",
+        "title": "Come Down",
+        "album": "Malibu",
+        "year_released": 2016
+    },
+    {
+        "artist": "Juice WRLD",
+        "title": "Lucid Dreams",
+        "album": "Goodbye & Good Riddance",
+        "year_released": 2018
+    },
+    {
+        "artist": "A Boogie wit da Hoodie",
+        "title": "Drowning",
+        "album": "The Bigger Artist",
+        "year_released": 2017
+    },
+    {
+        "artist": "Playboi Carti",
+        "title": "Magnolia",
+        "album": "Playboi Carti",
+        "year_released": 2017
+    },
+    {
+        "artist": "Kendrick Lamar",
+        "title": "Alright",
+        "album": "To Pimp a Butterfly",
+        "year_released": 2015
+    },
+    {
+        "artist": "Drake",
+        "title": "God's Plan",
+        "album": "Scorpion",
+        "year_released": 2018
+    },
+    {
+        "artist": "J. Cole",
+        "title": "Middle Child",
+        "album": "The Off-Season",
+        "year_released": 2019
+    },
+    {
+        "artist": "Travis Scott",
+        "title": "SICKO MODE",
+        "album": "Astroworld",
+        "year_released": 2018
+    },
+    {
+        "artist": "Childish Gambino",
+        "title": "This Is America",
+        "album": "Single",
+        "year_released": 2018
+    },
+    {
+        "artist": "Post Malone",
+        "title": "rockstar",
+        "album": "beerbongs & bentleys",
+        "year_released": 2017
+    },
+    {
+        "artist": "Eminem",
+        "title": "Rap God",
+        "album": "The Marshall Mathers LP 2",
+        "year_released": 2013
+    },
+    {
+        "artist": "Kanye West",
+        "title": "Runaway",
+        "album": "My Beautiful Dark Twisted Fantasy",
+        "year_released": 2010
+    },
+    {
+        "artist": "Cardi B",
+        "title": "WAP (feat. Megan Thee Stallion)",
+        "album": "Single",
+        "year_released": 2020
+    },
+    {
+        "artist": "Lil Nas X",
+        "title": "Old Town Road (feat. Billy Ray Cyrus)",
+        "album": "7",
+        "year_released": 2019
+    },
+    {
+        "artist": "Ariana Grande",
+        "title": "Thank U, Next",
+        "album": "Thank U, Next",
+        "year_released": 2019
+    },
+    {
+        "artist": "The Weeknd",
+        "title": "Blinding Lights",
+        "album": "After Hours",
+        "year_released": 2020
+    },
+    {
+        "artist": "Beyoncé",
+        "title": "Single Ladies (Put a Ring on It)",
+        "album": "I Am... Sasha Fierce",
+        "year_released": 2008
+    },
+    {
+        "artist": "Rihanna",
+        "title": "Umbrella",
+        "album": "Good Girl Gone Bad",
+        "year_released": 2007
+    },
+    {
+        "artist": "Bruno Mars",
+        "title": "24K Magic",
+        "album": "24K Magic",
+        "year_released": 2016
+    },
+    {
+        "artist": "Adele",
+        "title": "Rolling in the Deep",
+        "album": "21",
+        "year_released": 2010
+    },
+    {
+        "artist": "Frank Ocean",
+        "title": "Thinkin Bout You",
+        "album": "Channel Orange",
+        "year_released": 2012
+    },
+    {
+        "artist": "Lizzo",
+        "title": "Truth Hurts",
+        "album": "Cuz I Love You",
+        "year_released": 2017
+    },
+    {
+        "artist": "Solange",
+        "title": "Cranes in the Sky",
+        "album": "A Seat at the Table",
+        "year_released": 2016
+    },
+    {
+        "artist": "John Legend",
+        "title": "All of Me",
+        "album": "Love in the Future",
+        "year_released": 2013
+    },
+    {
+        "artist": "Dua Lipa",
+        "title": "Don't Start Now",
+        "album": "Future Nostalgia",
+        "year_released": 2019
+    },
+    {
+        "artist": "Justin Timberlake",
+        "title": "Can't Stop the Feeling!",
+        "album": "Trolls: Original Motion Picture Soundtrack",
+        "year_released": 2016
+    },
+    {
+        "artist": "SZA",
+        "title": "Love Galore",
+        "album": "Ctrl",
+        "year_released": 2017
+    },
+    {
+        "artist": "Alicia Keys",
+        "title": "If I Ain't Got You",
+        "album": "The Diary of Alicia Keys",
+        "year_released": 2003
+    },
+    {
+        "artist": "Sam Smith",
+        "title": "Stay with Me",
+        "album": "In the Lonely Hour",
+        "year_released": 2014
+    },
+    {
+        "artist": "Mariah Carey",
+        "title": "We Belong Together",
+        "album": "The Emancipation of Mimi",
+        "year_released": 2005
+    },
+    {
+        "artist": "Beyoncé",
+        "title": "Crazy in Love",
+        "album": "Dangerously in Love",
+        "year_released": 2003
+    },
+    {
+        "artist": "Usher",
+        "title": "Yeah!",
+        "album": "Confessions",
+        "year_released": 2004
+    },
+    {
+        "artist": "Whitney Houston",
+        "title": "I Will Always Love You",
+        "album": "The Bodyguard: Original Soundtrack Album",
+        "year_released": 1992
+    },
+    {
+        "artist": "Stevie Wonder",
+        "title": "Superstition",
+        "album": "Talking Book",
+        "year_released": 1972
+    },
+    {
+        "artist": "Metallica",
+        "title": "Enter Sandman",
+        "album": "Metallica",
+        "year_released": 1991
+    },
+    {
+        "artist": "Linkin Park",
+        "title": "In the End",
+        "album": "Hybrid Theory",
+        "year_released": 2000
+    },
+    {
+        "artist": "System of a Down",
+        "title": "Chop Suey!",
+        "album": "Toxicity",
+        "year_released": 2001
+    },
+    {
+        "artist": "Nirvana",
+        "title": "Smells Like Teen Spirit",
+        "album": "Nevermind",
+        "year_released": 1991
+    },
+    {
+        "artist": "Foo Fighters",
+        "title": "Everlong",
+        "album": "The Colour and the Shape",
+        "year_released": 1997
+    },
+    {
+        "artist": "Green Day",
+        "title": "Basket Case",
+        "album": "Dookie",
+        "year_released": 1994
+    },
+    {
+        "artist": "Red Hot Chili Peppers",
+        "title": "Under the Bridge",
+        "album": "Blood Sugar Sex Magik",
+        "year_released": 1991
+    },
+    {
+        "artist": "Arctic Monkeys",
+        "title": "Do I Wanna Know?",
+        "album": "AM",
+        "year_released": 2013
+    },
+    {
+        "artist": "The Killers",
+        "title": "Mr. Brightside",
+        "album": "Hot Fuss",
+        "year_released": 2003
+    },
+    {
+        "artist": "Radiohead",
+        "title": "Creep",
+        "album": "Pablo Honey",
+        "year_released": 1993
     }
-  ]
+ ]
