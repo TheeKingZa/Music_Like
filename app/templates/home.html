@@ -96,6 +96,13 @@ Home
     </section>
 </main>
 <script>
+
+    // Function to open modal and redirect to track details page
+function openTrackDetails(title, artist, album, yearReleased) {
+    // Redirect to track details page with track details as URL parameters
+    window.location.href = `/track/${encodeURIComponent(title)}`;
+}
+
     document.getElementById('searchForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
         let searchQuery = document.getElementById('searchInput').value;
@@ -124,6 +131,9 @@ Home
             })
             .catch(error => console.error('Error:', error));
     });
+
+
+    
 </script>
 
 {% endblock %}
