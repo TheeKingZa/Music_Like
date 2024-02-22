@@ -24,7 +24,8 @@
                 {% if user_count != 'login' and current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
             <p style="font-size: 10px; text-align: left;"> Users: {{ user_count}}</p>
             {% endif %}
-            <h1><b>Music Like</b></h1>
+                <h1><b>Music Like</b></h1>
+                <img src="/static/images/logo.png" style="width: 70px; height: 70px;">           
             </div>   
         </header>
 <hr/>
@@ -48,7 +49,7 @@
             <table>
                 <th style="display: inline">2024 &trade;<th>
                     {% if username != 'Guest' and current_page != 'login' and current_page != '/' and current_page != 'signUp' %}
-                    <th><a href="{{ url_for('logout') }}">logout</a></th>
+                    <th><a href="{{ url_for('logout') }}" style="color: red;">logout</a></th>
                     {% endif %}
         </table>
         </div>
