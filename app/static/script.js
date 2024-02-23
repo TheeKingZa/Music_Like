@@ -9,3 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
         alertContainer.remove();
     }, 4000); // 4 seconds in milliseconds
 });
+
+
+// script.js

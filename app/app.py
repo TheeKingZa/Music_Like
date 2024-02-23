@@ -142,11 +142,21 @@ def home():
 def search():
     """Search for tracks."""
     search_query = request.args.get('query')
+    offset = int(request.args.get('offset', 0))
+
+    with open('data/songs.json', 'r') as file:
+        songs_data = json.load(file)
+        
+    # Search for tracks
     search_results = [track for track in tracks if
                       search_query.lower() in track['title'].lower() or
                       search_query.lower() in track['album'].lower() or
                       search_query.lower() in track['artist'].lower()
                       ]
+    
+    # Apply offset and limit results to 10
+    search_results = search_results[offset:offset+10]
+    
     return jsonify(search_results)
 
 
