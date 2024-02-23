@@ -96,3 +96,65 @@ li a:active {
     padding: 0px;
     text-align: right;
 }
+
+/* Define a custom class for the search button */
+.search-button {
+    background-color: white; /* background-color */
+    color: black; /* Text color */
+    border-color: black; /* Border-color*/
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+    background-color: gold;
+    border-color: white;
+}
+.custom-input {
+    color: black; /* Change to black */
+    background-color: gold;
+    border-color: white;
+}
+/* Style for track list */
+.track-list {
+    list-style: none;
+    padding: 0;
+}
+
+.track-list-item {
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.track-list-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: gold;
+}
+
+.track-list-item p {
+    font-size: 14px;
+    margin: 0;
+    color: gold;
+}
+
+#alert-container {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.alert {
+    width: 300px; /* Adjust as needed */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dff0d8; /* Bootstrap's success alert background color */
+    color: #3c763d; /* Bootstrap's success alert text color */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow effect */
+}

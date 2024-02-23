@@ -8,132 +8,23 @@ Home
 <main>
     <!-- Nav Bar-->
     {% include 'navBar.html' %}
-    <style>
-        /* Define a custom class for the search button */
-        .search-button {
-            background-color: white; /* background-color */
-            color: black; /* Text color */
-            border-color: black; /* Border-color*/
-        }
-    
-        /* Hover effect for the search button */
-        .search-button:hover {
-            background-color: gold;
-            border-color: white;
-        }
-        .custom-input {
-            color: black; /* Change to black */
-            background-color: gold;
-            border-color: white;
-        }
-        /* Style for track list */
-        .track-list {
-            list-style: none;
-            padding: 0;
-        }
 
-        .track-list-item {
-            background-color: black;
-            border: 1px solid gold;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            padding: 15px;
-        }
-
-        .track-list-item h5 {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: gold;
-        }
-
-        .track-list-item p {
-            font-size: 14px;
-            margin: 0;
-            color: gold;
-        }
-    </style>
     <!-- Error messages when needed -->
     {% with messages = get_flashed_messages() %}
         {% if messages %}
-            <div class="alert alert-success" role="alert">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
+            <div id="alert-container">
+                <div class="alert alert-success" role="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
             </div>
         {% endif %}
     {% endwith %}
     
-    <section class="welcome-section">
-        <div class="custom-div">
-            <div class="row">
-                <div class="col-md-8">
-                    <p style="font-size: 15px;">Explore a vast collection of Music tracks.<br/>
-                        From your favorite artists, titles and albums.</p>
-                    <hr/>
-
-                </div>
-                <div class="col-md-4">
-                    <form id="searchForm" class="row g-3 align-items-center">
-                        <div class="col-auto">
-                            <input type="text" class="form-control custom-input" id="searchInput" name="searchQuery" placeholder="Search..." required>
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary search-button" type="submit"><b>Search</b></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="search-results">
-        <div class="container">
-            <div class="row" id="trackResults">
-                <!-- Track search results will appear here dynamically -->
-            </div>
-        </div>
-    </section>
 </main>
-<script>
 
-    // Function to open modal and redirect to track details page
-function openTrackDetails(title, artist, album, yearReleased) {
-    // Redirect to track details page with track details as URL parameters
-    window.location.href = `/track/${encodeURIComponent(title)}`;
-}
-
-    document.getElementById('searchForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        let searchQuery = document.getElementById('searchInput').value;
-        fetch(`/search?query=${searchQuery}`)
-            .then(response => response.json())
-            .then(data => {
-                let sortedData = data.sort((a, b) => {
-                    // Sort by title in ascending order
-                    return a.title.localeCompare(b.title);
-                });
-                let trackResults = document.getElementById('trackResults');
-                trackResults.innerHTML = ''; // Clear previous results
-                // Populate track search results
-                sortedData.forEach(track => {
-                    let trackListItem = document.createElement('li');
-                    trackListItem.classList.add('col-md-4', 'mb-4', 'track-list-item');
-                    trackListItem.innerHTML = `
-                        <h5>${track.title}</h5>
-                        <p>Artist: ${track.artist}</p>
-                        <p>Album: ${track.album}</p>
-                        <p>Year: ${track.year_released}</p>
-                        <br/>
-                    `;
-                    trackResults.appendChild(trackListItem);
-                });
-            })
-            .catch(error => console.error('Error:', error));
-    });
-
-
-    
-</script>
+<!-- Include the alert_timer.js file -->
+<script src="{{ url_for('static', filename='alert_timer.js') }}"></script>
 
 {% endblock %}

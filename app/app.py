@@ -9,6 +9,9 @@ from flask import (
 from db import (
     read_user_data, add_user_data
 )
+
+# security with Werkzeug
+from werkzeug.security import generate_password_hash, check_password_hash
 import json
 
 # Flask app instance
@@ -39,9 +42,11 @@ def login():
     if request.method == 'POST':
         entered_username = request.form['username']
         entered_password = request.form['password']
+        
         user_data = read_user_data()
+        
         for user in user_data:
-            if user['username'] == entered_username and user['password'] == entered_password:
+            if user['username'] == entered_username and 'password_hash' in user and check_password_hash(user['password_hash'], entered_password):
                 session['entered_username'] = entered_username
                 return redirect(url_for('home'))
         else:
