@@ -6,7 +6,7 @@ from flask import (
     get_flashed_messages,
     jsonify, session
 )
-from db import read_user_data, add_user_data
+from . import db
 import json
 
 # Flask app instance
