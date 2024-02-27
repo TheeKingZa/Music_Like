@@ -56,8 +56,8 @@ def login():
 @app.route("/username")
 def username():
     """Return the username."""
-    if "username" in session:
-        username = session['username']
+    if "entered_username" in session:
+        username = session['entered_username']
         return f"<h1>{username}</h1>"
     else:
         return redirect(url_for('login'))
@@ -99,15 +99,18 @@ def signup():
                 current_page='signUp',
                 show_navbar=False
             )
-        elif user['email'] == email:
-            error = "Email is already taken."
-            return render_template(
-                'sign-up.html',
-                error=error,
-                current_page='signUp',
-                show_navbar=False
-            )
 
+    # Check if the email is already taken
+    if any(user['email'] == email for user in user_data):
+        error = "Email is already taken."
+        return render_template(
+            'sign-up.html',
+            error=error,
+            current_page='signUp',
+            show_navbar=False
+        )
+
+    # If username and email are unique, proceed with signup
     user_data = {
         'username': username,
         'name': name,
