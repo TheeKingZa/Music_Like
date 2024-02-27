@@ -8,58 +8,15 @@ Home
 <main>
     <!-- Nav Bar-->
     {% include 'navBar.html' %}
-    <style>
-        /* Define a custom class for the search button */
-        .search-button {
-            background-color: white; /* background-color */
-            color: black; /* Text color */
-            border-color: black; /* Border-color*/
-        }
-    
-        /* Hover effect for the search button */
-        .search-button:hover {
-            background-color: gold;
-            border-color: white;
-        }
-        .custom-input {
-            color: black; /* Change to black */
-            background-color: gold;
-            border-color: white;
-        }
-        /* Style for track list */
-        .track-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .track-list-item {
-            background-color: black;
-            border: 1px solid gold;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            padding: 15px;
-        }
-
-        .track-list-item h5 {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: gold;
-        }
-
-        .track-list-item p {
-            font-size: 14px;
-            margin: 0;
-            color: gold;
-        }
-    </style>
     <!-- Error messages when needed -->
     {% with messages = get_flashed_messages() %}
         {% if messages %}
-            <div class="alert alert-success" role="alert">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
+            <div id="alert-container">
+                <div class="alert alert-success" role="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
             </div>
         {% endif %}
     {% endwith %}
@@ -136,4 +93,5 @@ function openTrackDetails(title, artist, album, yearReleased) {
     
 </script>
 
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 {% endblock %}

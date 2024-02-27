@@ -6,7 +6,9 @@ from flask import (
     get_flashed_messages,
     jsonify, session
 )
-from . import db
+from .db import read_user_data, add_user_data
+# security with Werkzeug
+from werkzeug.security import generate_password_hash, check_password_hash
 import json
 
 # Flask app instance
@@ -39,7 +41,7 @@ def login():
         entered_password = request.form['password']
         user_data = read_user_data()
         for user in user_data:
-            if user['username'] == entered_username and user['password'] == entered_password:
+            if user['username'] == entered_username and 'password_hash' in user and check_password_hash(user['password_hash'], entered_password):
                 session['entered_username'] = entered_username
                 return redirect(url_for('home'))
         else:
@@ -82,7 +84,12 @@ def signup():
 
     if password != confirm_password:
         error = "Passwords do not match."
-        return render_template('sign-up.html', error=error, show_navbar=False)
+        return render_template(
+            'sign-up.html',
+            error=error,
+            current_page='signUp',
+            show_navbar=False
+        )
 
     user_data = read_user_data()
     for user in user_data:
@@ -91,6 +98,15 @@ def signup():
             return render_template(
                 'sign-up.html',
                 error=error,
+                current_page='signUp',
+                show_navbar=False
+            )
+        elif user['email'] == email:
+            error = "Email is already taken."
+            return render_template(
+                'sign-up.html',
+                error=error,
+                current_page='signUp',
                 show_navbar=False
             )
 
@@ -181,7 +197,6 @@ def profile():
     else:
         flash('User not found', 'error')
         return redirect(url_for('home'))
-
 
 
 if __name__ == '__main__':
