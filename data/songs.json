@@ -1,440 +1,804 @@
 [
     {
+        "song_id": "hFm3LQgNPX",
         "artist": "TheeKingZa",
         "title": "Tell Me",
         "album": "Vices",
-        "year_released": 2023
+        "year_released": 2023,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "Y9wR74XsDc",
         "artist": "Earle Fari",
         "title": "Lose Myself",
         "album": "Common Tape",
-        "year_released": 2020
+        "year_released": 2020,
+        "genre": "R&B"
     },
     {
+        "song_id": "m2N5pxdG6T",
         "artist": "Kanye West",
         "title": "We Major(feat Really Doe)",
         "album": "Late Registration",
-        "year_released": 2005
+        "year_released": 2005,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "Pz3B9KqvEd",
         "artist": "Childish Gambino",
         "title": "Redbone",
         "album": "Awaken, My Love!",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "Funk"
     },
     {
+        "song_id": "zY7F4vTg6c",
         "artist": "Travis Scott",
         "title": "SICKO MODE",
         "album": "Astroworld",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "sW8D5kFtR3",
         "artist": "J. Cole",
         "title": "No Role Modelz",
         "album": "2014 Forest Hills Drive",
-        "year_released": 2014
+        "year_released": 2014,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "nJ6F7YkTbP",
         "artist": "Chance the Rapper",
         "title": "No Problem",
         "album": "Coloring Book",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "aH8D4kFsR7",
         "artist": "Cardi B",
         "title": "Bodak Yellow",
         "album": "Invasion of Privacy",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "pS6D3fGvM2",
         "artist": "Logic",
         "title": "1-800-273-8255",
         "album": "Everybody",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "bP4W5rKuV3",
         "artist": "Lil Wayne",
         "title": "A Milli",
         "album": "Tha Carter III",
-        "year_released": 2008
+        "year_released": 2008,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "vK8h3gZwN2",
         "artist": "ASAP Rocky",
         "title": "Praise the Lord (Da Shine)",
         "album": "Testing",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "dM6k7gHfR5",
         "artist": "Migos",
         "title": "Bad and Boujee",
         "album": "Culture",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "tJ7b4pZmW9",
         "artist": "Future",
         "title": "Mask Off",
         "album": "Future",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "cH9q8rKvF4",
         "artist": "Kendrick Lamar",
         "title": "HUMBLE.",
         "album": "DAMN.",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "fW2j5rKbP3",
         "artist": "Drake",
         "title": "Hotline Bling",
         "album": "Views",
-        "year_released": 2015
+        "year_released": 2015,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "gS5t6fHmD7",
         "artist": "Kanye West",
         "title": "Stronger",
         "album": "Graduation",
-        "year_released": 2007
+        "year_released": 2007,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "eT4v6pJzW1",
         "artist": "Jay-Z",
         "title": "Empire State of Mind",
         "album": "The Blueprint 3",
-        "year_released": 2009
+        "year_released": 2009,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "lW3g4hKtF9",
         "artist": "Eminem",
         "title": "Lose Yourself",
         "album": "8 Mile Soundtrack",
-        "year_released": 2002
+        "year_released": 2002,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "uJ2t5pLzQ8",
         "artist": "Nas",
         "title": "N.Y. State of Mind",
         "album": "Illmatic",
-        "year_released": 1994
+        "year_released": 1994,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "rK3v4gHtF5",
         "artist": "OutKast",
         "title": "Ms. Jackson",
         "album": "Stankonia",
-        "year_released": 2000
+        "year_released": 2000,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "mK8z7qFwR3",
         "artist": "Tupac Shakur",
         "title": "California Love",
         "album": "All Eyez on Me",
-        "year_released": 1995
+        "year_released": 1995,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "pL9r5gHmC2",
         "artist": "The Notorious B.I.G.",
         "title": "Juicy",
         "album": "Ready to Die",
-        "year_released": 1994
+        "year_released": 1994,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "sW3t8qKvF4",
         "artist": "Lauryn Hill",
         "title": "Doo Wop (That Thing)",
         "album": "The Miseducation of Lauryn Hill",
-        "year_released": 1998
+        "year_released": 1998,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "nM6z8qLwF2",
         "artist": "Tyler, The Creator",
         "title": "EARFQUAKE",
         "album": "IGOR",
-        "year_released": 2019
+        "year_released": 2019,
+        "genre": "Rap"
     },
     {
+        "song_id": "lN9t7kGwH4",
         "artist": "Lil Uzi Vert",
         "title": "XO TOUR Llif3",
         "album": "Luv Is Rage 2",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Rap"
     },
     {
+        "song_id": "bM8j5fHvQ3",
         "artist": "21 Savage",
         "title": "Bank Account",
         "album": "Issa Album",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Trap"
     },
     {
+        "song_id": "aJ7w6tHqZ5",
         "artist": "JID",
         "title": "151 Rum",
         "album": "DiCaprio 2",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Rap"
     },
     {
+        "song_id": "hN3w4gPvL2",
         "artist": "Sheck Wes",
         "title": "Mo Bamba",
         "album": "MUDBOY",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Trap"
     },
     {
+        "song_id": "tK6j8pWzF1",
         "artist": "Meek Mill",
         "title": "Dreams and Nightmares",
         "album": "Dreams and Nightmares",
-        "year_released": 2012
+        "year_released": 2012,
+        "genre": "Rap"
     },
     {
+        "song_id": "gN7w4fKmL9",
         "artist": "Anderson .Paak",
         "title": "Come Down",
         "album": "Malibu",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "R&B"
     },
     {
+        "song_id": "tJ7q8fKwM2",
         "artist": "Juice WRLD",
         "title": "Lucid Dreams",
         "album": "Goodbye & Good Riddance",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Emo Rap"
     },
     {
+        "song_id": "mN6w5kFvQ8",
         "artist": "A Boogie wit da Hoodie",
         "title": "Drowning",
         "album": "The Bigger Artist",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Trap"
     },
     {
+        "song_id": "hM5g6jFtP4",
         "artist": "Playboi Carti",
         "title": "Magnolia",
         "album": "Playboi Carti",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Trap"
     },
     {
+        "song_id": "pL9f7wKzH3",
         "artist": "Kendrick Lamar",
         "title": "Alright",
         "album": "To Pimp a Butterfly",
-        "year_released": 2015
+        "year_released": 2015,
+        "genre": "Conscious Hip Hop"
     },
     {
+        "song_id": "bN8k4sGmW2",
         "artist": "Drake",
         "title": "God's Plan",
         "album": "Scorpion",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "qJ6r5wFvL2",
         "artist": "J. Cole",
         "title": "Middle Child",
         "album": "The Off-Season",
-        "year_released": 2019
+        "year_released": 2019,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "lN9g4wHmP3",
         "artist": "Travis Scott",
         "title": "SICKO MODE",
         "album": "Astroworld",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "eM8j7fGqR4",
         "artist": "Childish Gambino",
         "title": "This Is America",
         "album": "Single",
-        "year_released": 2018
+        "year_released": 2018,
+        "genre": "Trap"
     },
     {
+        "song_id": "wH6k5vFtL2",
         "artist": "Post Malone",
         "title": "rockstar",
         "album": "beerbongs & bentleys",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "gJ9q4wRmF5",
         "artist": "Eminem",
         "title": "Rap God",
         "album": "The Marshall Mathers LP 2",
-        "year_released": 2013
+        "year_released": 2013,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "tK8s5pFwL3",
         "artist": "Kanye West",
         "title": "Runaway",
         "album": "My Beautiful Dark Twisted Fantasy",
-        "year_released": 2010
+        "year_released": 2010,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "rN7j4kHwF9",
         "artist": "Cardi B",
         "title": "WAP (feat. Megan Thee Stallion)",
         "album": "Single",
-        "year_released": 2020
+        "year_released": 2020,
+        "genre": "Hip Hop"
     },
     {
+        "song_id": "pL9s7kGwR3",
         "artist": "Lil Nas X",
         "title": "Old Town Road (feat. Billy Ray Cyrus)",
         "album": "7",
-        "year_released": 2019
+        "year_released": 2019,
+        "genre": "Country Rap"
     },
     {
+        "song_id": "qM8f3sJwK5",
         "artist": "Ariana Grande",
         "title": "Thank U, Next",
         "album": "Thank U, Next",
-        "year_released": 2019
+        "year_released": 2019,
+        "genre": "Pop"
     },
     {
+        "song_id": "wP7g4vRmK2",
         "artist": "The Weeknd",
         "title": "Blinding Lights",
         "album": "After Hours",
-        "year_released": 2020
+        "year_released": 2020,
+        "genre": "R&B"
     },
     {
+        "song_id": "eN5h4tWpJ8",
         "artist": "Beyoncé",
         "title": "Single Ladies (Put a Ring on It)",
         "album": "I Am... Sasha Fierce",
-        "year_released": 2008
+        "year_released": 2008,
+        "genre": "R&B"
     },
     {
+        "song_id": "rH9j3gWkF4",
         "artist": "Rihanna",
         "title": "Umbrella",
         "album": "Good Girl Gone Bad",
-        "year_released": 2007
+        "year_released": 2007,
+        "genre": "R&B"
     },
     {
+        "song_id": "bL8k5qFjM2",
         "artist": "Bruno Mars",
         "title": "24K Magic",
         "album": "24K Magic",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "Funk"
     },
     {
+        "song_id": "sN6h8tRjK2",
         "artist": "Adele",
         "title": "Rolling in the Deep",
         "album": "21",
-        "year_released": 2010
+        "year_released": 2010,
+        "genre": "Pop"
     },
     {
+        "song_id": "tK7g3wMjF5",
         "artist": "Frank Ocean",
         "title": "Thinkin Bout You",
         "album": "Channel Orange",
-        "year_released": 2012
+        "year_released": 2012,
+        "genre": "R&B"
     },
     {
+        "song_id": "gN8j5kWmR2",
         "artist": "Lizzo",
         "title": "Truth Hurts",
         "album": "Cuz I Love You",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "Pop"
     },
     {
+        "song_id": "rM7w3tFjK5",
         "artist": "Solange",
         "title": "Cranes in the Sky",
         "album": "A Seat at the Table",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "R&B"
     },
     {
+        "song_id": "hN6f4sGwL8",
         "artist": "John Legend",
         "title": "All of Me",
         "album": "Love in the Future",
-        "year_released": 2013
+        "year_released": 2013,
+        "genre": "Pop"
     },
     {
+        "song_id": "tM9g7sHkR3",
         "artist": "Dua Lipa",
         "title": "Don't Start Now",
         "album": "Future Nostalgia",
-        "year_released": 2019
+        "year_released": 2019,
+        "genre": "Pop"
     },
     {
+        "song_id": "bL8f5wJkP2",
         "artist": "Justin Timberlake",
         "title": "Can't Stop the Feeling!",
         "album": "Trolls: Original Motion Picture Soundtrack",
-        "year_released": 2016
+        "year_released": 2016,
+        "genre": "Pop"
     },
     {
+        "song_id": "sN6g4wFtJ5",
         "artist": "SZA",
         "title": "Love Galore",
         "album": "Ctrl",
-        "year_released": 2017
+        "year_released": 2017,
+        "genre": "R&B"
     },
     {
+        "song_id": "tL9j4sGkF6",
         "artist": "Alicia Keys",
         "title": "If I Ain't Got You",
         "album": "The Diary of Alicia Keys",
-        "year_released": 2003
+        "year_released": 2003,
+        "genre": "R&B"
     },
     {
+        "song_id": "rN7f6gHwK5",
         "artist": "Sam Smith",
         "title": "Stay with Me",
         "album": "In the Lonely Hour",
-        "year_released": 2014
+        "year_released": 2014,
+        "genre": "Pop"
     },
     {
+        "song_id": "hK8j4fWmR7",
         "artist": "Mariah Carey",
         "title": "We Belong Together",
         "album": "The Emancipation of Mimi",
-        "year_released": 2005
+        "year_released": 2005,
+        "genre": "R&B"
     },
     {
+        "song_id": "mL7j9gFwK2",
         "artist": "Beyoncé",
         "title": "Crazy in Love",
         "album": "Dangerously in Love",
-        "year_released": 2003
+        "year_released": 2003,
+        "genre": "R&B"
     },
     {
+        "song_id": "tN7k5fHmP3",
         "artist": "Usher",
         "title": "Yeah!",
         "album": "Confessions",
-        "year_released": 2004
+        "year_released": 2004,
+        "genre": "R&B"
     },
     {
+        "song_id": "sJ9h6fGwL2",
         "artist": "Whitney Houston",
         "title": "I Will Always Love You",
         "album": "The Bodyguard: Original Soundtrack Album",
-        "year_released": 1992
+        "year_released": 1992,
+        "genre": "R&B"
     },
     {
+        "song_id": "lK7g5jFmH2",
         "artist": "Stevie Wonder",
         "title": "Superstition",
         "album": "Talking Book",
-        "year_released": 1972
+        "year_released": 1972,
+        "genre": "Funk"
     },
     {
+        "song_id": "mJ8g4sHwK5",
         "artist": "Metallica",
         "title": "Enter Sandman",
         "album": "Metallica",
-        "year_released": 1991
+        "year_released": 1991,
+        "genre": "Heavy Metal"
     },
     {
+        "song_id": "nL9j7fGkP4",
         "artist": "Linkin Park",
         "title": "In the End",
         "album": "Hybrid Theory",
-        "year_released": 2000
+        "year_released": 2000,
+        "genre": "Nu Metal"
     },
     {
+        "song_id": "pM8f3kWjR6",
         "artist": "System of a Down",
         "title": "Chop Suey!",
         "album": "Toxicity",
-        "year_released": 2001
+        "year_released": 2001,
+        "genre": "Alternative Metal"
     },
     {
+        "song_id": "wN6g5fJmL2",
         "artist": "Nirvana",
         "title": "Smells Like Teen Spirit",
         "album": "Nevermind",
-        "year_released": 1991
+        "year_released": 1991,
+        "genre": "Grunge"
     },
     {
+        "song_id": "gH7j4wRvM2",
         "artist": "Foo Fighters",
         "title": "Everlong",
         "album": "The Colour and the Shape",
-        "year_released": 1997
+        "year_released": 1997,
+        "genre": "Alternative Rock"
     },
     {
+        "song_id": "rK9h5wFjL2",
         "artist": "Green Day",
         "title": "Basket Case",
         "album": "Dookie",
-        "year_released": 1994
+        "year_released": 1994,
+        "genre": "Punk Rock"
     },
     {
+        "song_id": "bL8j3sFwR9",
         "artist": "Red Hot Chili Peppers",
         "title": "Under the Bridge",
         "album": "Blood Sugar Sex Magik",
-        "year_released": 1991
+        "year_released": 1991,
+        "genre": "Alternative Rock"
     },
     {
+        "song_id": "sL8j3fGwR5",
         "artist": "Arctic Monkeys",
         "title": "Do I Wanna Know?",
         "album": "AM",
-        "year_released": 2013
+        "year_released": 2013,
+        "genre": "Indie Rock"
     },
     {
+        "song_id": "nM9f5sJwK3",
         "artist": "The Killers",
         "title": "Mr. Brightside",
         "album": "Hot Fuss",
-        "year_released": 2003
+        "year_released": 2003,
+        "genre": "Indie Rock"
     },
     {
+        "song_id": "mL7j5fHwR9",
         "artist": "Radiohead",
         "title": "Creep",
         "album": "Pablo Honey",
-        "year_released": 1993
+        "year_released": 1993,
+        "genre": "Alternative Rock"
+    },
+    {
+        "song_id": "pK8f4sHwL6",
+        "artist": "Lana Del Rey",
+        "title": "Summertime Sadness",
+        "album": "Born to Die",
+        "year_released": 2012,
+        "genre": "Indie Pop"
+    },
+    {
+        "song_id": "tN9j7fHmR4",
+        "artist": "Billie Eilish",
+        "title": "bad guy",
+        "album": "When We All Fall Asleep, Where Do We Go?",
+        "year_released": 2019,
+        "genre": "Electropop"
+    },
+    {
+        "song_id": "lM8h3sGwR5",
+        "artist": "Coldplay",
+        "title": "Viva la Vida",
+        "album": "Viva la Vida or Death and All His Friends",
+        "year_released": 2008,
+        "genre": "Alternative Rock"
+    },
+    {
+        "song_id": "bN6j8fWmL5",
+        "artist": "Twenty One Pilots",
+        "title": "Stressed Out",
+        "album": "Blurryface",
+        "year_released": 2015,
+        "genre": "Indie Pop"
+    },
+    {
+        "song_id": "sM8j4fHwK9",
+        "artist": "Imagine Dragons",
+        "title": "Radioactive",
+        "album": "Night Visions",
+        "year_released": 2012,
+        "genre": "Alternative Rock"
+    },
+    {
+        "song_id": "rK9f6sJwL5",
+        "artist": "Hozier",
+        "title": "Take Me to Church",
+        "album": "Hozier",
+        "year_released": 2013,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "mJ7h4fGwL5",
+        "artist": "Vampire Weekend",
+        "title": "A-Punk",
+        "album": "Vampire Weekend",
+        "year_released": 2008,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "tL9j4fHmK8",
+        "artist": "Florence + the Machine",
+        "title": "Dog Days Are Over",
+        "album": "Lungs",
+        "year_released": 2008,
+        "genre": "Indie Pop"
+    },
+    {
+        "song_id": "mN7j4gHwR3",
+        "artist": "Of Monsters and Men",
+        "title": "Little Talks",
+        "album": "My Head Is an Animal",
+        "year_released": 2011,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "sM8j3hFwK5",
+        "artist": "The Lumineers",
+        "title": "Ho Hey",
+        "album": "The Lumineers",
+        "year_released": 2012,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "bN6j5fHwR4",
+        "artist": "Mumford & Sons",
+        "title": "I Will Wait",
+        "album": "Babel",
+        "year_released": 2012,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "rM9g6fJwL2",
+        "artist": "Edward Sharpe & The Magnetic Zeros",
+        "title": "Home",
+        "album": "Up from Below",
+        "year_released": 2009,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "hK8f4jGwL6",
+        "artist": "Bon Iver",
+        "title": "Skinny Love",
+        "album": "For Emma, Forever Ago",
+        "year_released": 2007,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "wN7j6fKmR4",
+        "artist": "Fleet Foxes",
+        "title": "White Winter Hymnal",
+        "album": "Fleet Foxes",
+        "year_released": 2008,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "gM8j3sFkP5",
+        "artist": "The Head and the Heart",
+        "title": "Rivers and Roads",
+        "album": "The Head and the Heart",
+        "year_released": 2011,
+        "genre": "Indie Folk"
+    },
+    {
+        "song_id": "lN9j7sFwK3",
+        "artist": "M83",
+        "title": "Midnight City",
+        "album": "Hurry Up, We're Dreaming",
+        "year_released": 2011,
+        "genre": "Synth-pop"
+    },
+    {
+        "song_id": "mK7j3fHmL9",
+        "artist": "Passion Pit",
+        "title": "Take a Walk",
+        "album": "Gossamer",
+        "year_released": 2012,
+        "genre": "Synth-pop"
+    },
+    {
+        "song_id": "tM8h3fGmR5",
+        "artist": "MGMT",
+        "title": "Kids",
+        "album": "Oracular Spectacular",
+        "year_released": 2007,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "bN7j5fHwR2",
+        "artist": "The Strokes",
+        "title": "Last Nite",
+        "album": "Is This It",
+        "year_released": 2001,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "rL8j4fGwK6",
+        "artist": "Vampire Weekend",
+        "title": "Harmony Hall",
+        "album": "Father of the Bride",
+        "year_released": 2019,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "hM9j5fGwL7",
+        "artist": "The National",
+        "title": "Bloodbuzz Ohio",
+        "album": "High Violet",
+        "year_released": 2010,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "sN8j4fHwR3",
+        "artist": "Foster the People",
+        "title": "Pumped Up Kicks",
+        "album": "Torches",
+        "year_released": 2010,
+        "genre": "Indie Pop"
+    },
+    {
+        "song_id": "mK9j7fHwL4",
+        "artist": "Phoenix",
+        "title": "1901",
+        "album": "Wolfgang Amadeus Phoenix",
+        "year_released": 2009,
+        "genre": "Indie Pop"
+    },
+    {
+        "song_id": "gM8j3fHwK2",
+        "artist": "Two Door Cinema Club",
+        "title": "What You Know",
+        "album": "Tourist History",
+        "year_released": 2010,
+        "genre": "Indie Rock"
+    },
+    {
+        "song_id": "lN7h4fGwR6",
+        "artist": "Tame Impala",
+        "title": "The Less I Know the Better",
+        "album": "Currents",
+        "year_released": 2015,
+        "genre": "Psychedelic Pop"
+    },
+    {
+        "song_id": "bM8j5fHwR2",
+        "artist": "Portugal. The Man",
+        "title": "Feel It Still",
+        "album": "Woodstock",
+        "year_released": 2017,
+        "genre": "Indie Pop"
+    },
+    {
+        "song_id": "rL7j4fHwK5",
+        "artist": "Fleet Foxes",
+        "title": "Helplessness Blues",
+        "album": "Helplessness Blues",
+        "year_released": 2011,
+        "genre": "Indie Folk"
     }
- ]
+]
+
+
